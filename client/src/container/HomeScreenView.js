@@ -14,7 +14,7 @@ const HomeScreenView = () => {
 
   return (
     <View style={styles.container}>
-      <Text>Testing HomeScreen!</Text>
+      <Text>Testing HomeScreen!</Text>{' '}
       <Text>{'testing babel spread operator: ' + JSON.stringify(final)}</Text>
     </View>
   );

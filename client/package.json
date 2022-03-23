@@ -7,11 +7,16 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "stage-ios": "expo build:ios --release-channel staging",
+    "stage-android": "expo build:android --release-channel staging",
+    "prod-ios": "expo build:ios --release-channel prod",
+    "prod-android": "expo build:android --release-channel prod"
   },
   "dependencies": {
     "@react-navigation/stack": "^6.1.1",
     "expo": "~44.0.0",
+    "expo-constants": "^13.0.2",
     "expo-status-bar": "~1.2.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
