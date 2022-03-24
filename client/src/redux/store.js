@@ -9,17 +9,11 @@ const sagaMiddleware = createSagaMiddleware();
 
 const middlewares = [sagaMiddleware, logger];
 
-const enhancers = [
-  applyMiddleware(
-    middlewares
-  ),
-];
+const enhancers = [applyMiddleware(middlewares)];
 
 /* eslint-disable no-undef */
 const composeEnhancers =
-  (__DEV__ &&
-    typeof window !== 'undefined' &&
-    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) ||
+  (__DEV__ && typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) ||
   compose;
 /* eslint-enable no-undef */
 
