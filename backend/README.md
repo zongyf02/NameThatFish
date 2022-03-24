@@ -16,7 +16,7 @@ $ pip install -r requirements.txt
 ```
 $ export PYTHONPATH=$PYTHONPATH:/Users/iproudyou/Documents/fish/
 ```
-Modify the first part of the path respective to your device
+Modify the first part of the path according to your device
 
 4. initiate the flask application via
 
