@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import styles from './style';
+import style from './style';
 import { Entypo } from '@expo/vector-icons';
 import { View, Text } from 'react-native';
 
@@ -15,13 +15,13 @@ const BottomTab = ({ screens }) => {
       options={{
         tabBarLabel: screen.name,
         tabBarIcon: ({ focused }) => (
-          <View style={styles.iconContainer}>
+          <View style={style.iconContainer}>
             <Entypo
               name={screen.iconId}
               size={screen.iconSize}
               color={focused ? '#00a4e6' : '#748c94'}
             />
-            <Text style={styles.iconLabel}>{screen.name}</Text>
+            <Text style={style.iconLabel}>{screen.name}</Text>
           </View>
         ),
       }}
@@ -33,7 +33,7 @@ const BottomTab = ({ screens }) => {
       screenOptions={{
         headerShown: false,
         tabBarShowLabel: false,
-        tabBarStyle: styles.botTabBar,
+        tabBarStyle: style.botTabBar,
       }}
     >
       {_.map(screens, (screen) => renderScreen(screen))}
