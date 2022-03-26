@@ -6,8 +6,10 @@ Alembic is a migration tool. It is useful when we want to create/delete table, a
 
 ## Changing the database url
 
-Change the `sqlalchemy.url` in database/alembic/alembic.ini
-e.g. If you wish to use sqlite, then set sqlalchemy.url = sqlite:///fish.db
+1. Change the `sqlalchemy.url` in database/alembic/alembic.ini
+   e.g. If you wish to use sqlite, then set sqlalchemy.url = sqlite:///fish.db
+
+2. Change the url in backend.database.orm.**init**.py
 
 ## Creating a migration script
 
