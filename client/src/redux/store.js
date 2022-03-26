@@ -1,15 +1,14 @@
 import { applyMiddleware, createStore, compose } from 'redux';
 import { persistStore, persistReducer } from 'redux-persist';
-import storage from 'redux-persist/lib/storage';
-import reducer from './reducers';
+import reducer from './reducers/reducers';
 import createSagaMiddleware from 'redux-saga';
-import logger from 'redux-logger';
+
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import rootSaga, { logger } from './sagas';
 
 const sagaMiddleware = createSagaMiddleware();
 
-const middlewares = [sagaMiddleware, logger];
-
-const enhancers = [applyMiddleware(middlewares)];
+const enhancers = [applyMiddleware(sagaMiddleware, logger)];
 
 /* eslint-disable no-undef */
 const composeEnhancers =
@@ -19,12 +18,20 @@ const composeEnhancers =
 
 const enhancer = composeEnhancers(...enhancers);
 
+// Middleware: Redux Persist Config
 const persistConfig = {
+  // Root
   key: 'root',
-  storage,
+  // Storeage Method (React Native)
+  storage: AsyncStorage,
+  // Whitelist (Save Specific Reducers)
+  whitelist: [],
+  // Blacklist (Don't Save Specific Reducers)
   blacklist: [],
 };
 
 const persistedReducer = persistReducer(persistConfig, reducer);
 export const store = createStore(persistedReducer, {}, enhancer);
 export const persistor = persistStore(store);
+
+sagaMiddleware.run(rootSaga);

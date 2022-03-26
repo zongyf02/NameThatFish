@@ -1,5 +1,6 @@
 import { BottomTab } from '../components/navigation';
-import { ImgUploader, Camera } from '../components/upload-camera';
+import { Camera } from '../components/camera';
+import { ImgUploader } from '../components/uploader';
 
 const UploadCameraView = () => {
   const screens = [
