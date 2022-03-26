@@ -1,9 +1,34 @@
 from flask import request
 from flask.wrappers import Response
 
+import json
+import logging
+from functools import wraps
+
 from fish import app
 from backend.database.orm.models import User, Picture
-from backend.database.orm.session_manager import session_manager
+from backend.database.orm.session_context import SessionContext
+
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
+ch = logging.StreamHandler()
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+ch.setFormatter(formatter)
+logger.addHandler(ch)
+
+
+def exception_handler(func):
+  @wraps(func)
+  def _exception_handler(*args, **kwargs):
+    try:
+      return func(*args, **kwargs)
+    except Exception as e:
+      logger.exception(e)
+      return Response(json.dumps({'error': 'unexpected_error', 'message': str(e)}),
+                      status=401,
+                      content_type='application/json')
+
+  return _exception_handler
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -11,17 +36,49 @@ def handle_health_check():
   """Return response 200 for successful health check"""
   return Response(status=200)
 
-@app.route("/user/<int:user_id>")
-def show_picture(user_id):
-  user = User.query.one_or_none(user_id)
-  return f"User {user.username}"
 
-@app.route("/create/user", methods=["POST"])
+@app.route("/user/<user_id>", methods=["GET"])
+@exception_handler
+def get_user(user_id):
+  with SessionContext() as session:
+    user = session.get_first(User, id=user_id)
+    logger.info('Successfully fetched the user')
+    user_return = {'id': str(user.id), 'username': user.username, 'email': user.email, 'pictures': user.pictures}
+    return Response(json.dumps(user_return),
+                    status=200,
+                    content_type='applications/json')
+
+@app.route("/user/create", methods=["POST"])
+@exception_handler
 def create_user():
-  if request.method == 'POST':
-    with session_manager() as session:
-      session.add(User(username="alex", email="li142a@uwaterloo.ca"))
-      session.commit()
+  data = request.get_json()
+  with SessionContext() as session:
+    if data is not None:
+      user = User(**data)
+      session.create(user)
+      logger.info('Successfully created the user')
+      return Response(json.dumps({'id': user.id, 'username': user.username, 'email': user.email, 'pictures': user.pictures, 'created_at': user.created_at}), status=200)
+    else:
+      raise('Query must be provided in the request body')
+
+@app.route("/user/update/<user_id>", methods=["POST"])
+@exception_handler
+def update_user(user_id):
+  data = request.get_json()
+  with SessionContext() as session:
+    if data is not None:
+      session.update_any(User, User(**data), id=user_id)
+      logger.info('Successfully updated the user')
+      return Response(status=200)
+    else:
+      raise('Query must be provided in the request body')
+
+@app.route("/user/delete/<user_id>", methods=["POST"])
+@exception_handler
+def delete_user(user_id):
+  with SessionContext() as session:
+    session.delete_any(User, id=user_id)
+    logger.info('Successfully deleted the user')
     return Response(status=200)
 
 @app.route("/predict", methods=["POST"])

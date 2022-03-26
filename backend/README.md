@@ -13,9 +13,11 @@ $ pip install -r requirements.txt
 ```
 
 3. type in the following command in the command prompt
+
 ```
-$ export PYTHONPATH=$PYTHONPATH:/Users/iproudyou/Documents/fish/
+$ export PYTHONPATH=$PYTHONPATH:/Users/iproudyou/Documents/github.com/NameThatFish/
 ```
+
 Modify the first part of the path according to your device
 
 4. initiate the flask application via
