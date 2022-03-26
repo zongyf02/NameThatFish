@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import { camera } from './camera/reducer';
+import camera from './camera/reducer';
 
 // ## Generator Reducer Imports
 

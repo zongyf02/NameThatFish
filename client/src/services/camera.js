@@ -1,9 +1,11 @@
-import 'expo-camera';
-
-const CameraService = () => {
-  const requestCameraPermissionsAsync = async (Camera) => {
-    return await Camera.Constant;
+class CameraService {
+  requestCameraPermissionsAsync = async (camera) => {
+    return await camera.current.requestCameraPermissionsAsync();
   };
-};
 
-export default CameraService();
+  requestCameraCaptureAsync = async (camera) => {
+    return await camera.current.takePictureAsync();
+  };
+}
+
+export default new CameraService();
