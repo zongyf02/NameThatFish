@@ -21,12 +21,13 @@ def exception_handler(func):
   @wraps(func)
   def _exception_handler(*args, **kwargs):
     try:
-      return func(*args, **kwargs)
+      result = func(*args, **kwargs)
     except Exception as e:
       logger.exception(e)
       return Response(json.dumps({'error': 'unexpected_error', 'message': str(e)}),
                       status=401,
                       content_type='application/json')
+    return result
 
   return _exception_handler
 
@@ -54,12 +55,12 @@ def create_user():
   data = request.get_json()
   with SessionContext() as session:
     if data is not None:
-      user = User(**data)
-      session.create(user)
+      session.create(User(**data))
       logger.info('Successfully created the user')
-      return Response(json.dumps({'id': user.id, 'username': user.username, 'email': user.email, 'pictures': user.pictures, 'created_at': user.created_at}), status=200)
+      return Response(status=200)
     else:
       raise('Query must be provided in the request body')
+    
 
 @app.route("/user/update/<user_id>", methods=["POST"])
 @exception_handler

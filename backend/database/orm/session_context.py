@@ -64,6 +64,7 @@ class SessionManager():
     """
     return self.session.query(model).filter_by(**filters).update(update)
 
+  @commit_or_rollback
   def create(self, object):
     """ creates an entry to the database
 
@@ -84,6 +85,7 @@ class SessionManager():
     """
     return self.session.add(object)
 
+  @commit_or_rollback
   def delete_any(self, model, **filters):
     """ delete_any deletes all items satisfying filters to update
 
@@ -104,6 +106,7 @@ class SessionManager():
     """
     return self.session.query(model).filter_by(**filters).delete()
 
+  @commit_or_rollback
   def exist(self, model, **filters):
     """ exist returns True if there is a row that satisfies filters, False otherwise
 
