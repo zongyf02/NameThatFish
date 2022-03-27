@@ -11,7 +11,11 @@ const StackNav = ({ screens }) => {
     <Stack.Screen key={screen.name} name={screen.name} component={screen.component} />
   );
 
-  return <Stack.Navigator>{_.map(screens, (screen) => renderScreen(screen))}</Stack.Navigator>;
+  return (
+    <Stack.Navigator screenOptions={{ headerTitleAlign: 'center' }}>
+      {_.map(screens, (screen) => renderScreen(screen))}
+    </Stack.Navigator>
+  );
 };
 
 export default StackNav;
