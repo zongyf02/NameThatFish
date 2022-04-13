@@ -1,12 +1,15 @@
 import _ from 'lodash';
 import * as cameraTypes from './actionTypes';
 
+// redux state
 const initialState = {
   cameraStatus: 'unauthorized',
+  cameraAspectRatio: '4:3',
   cameraErrMsg: null,
   photo: null,
 };
 
+// reducer
 export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
     case cameraTypes.CAMERA_PERMISSION_SUCCESS:
@@ -22,8 +25,13 @@ export default function reducer(state = initialState, action = {}) {
   }
 }
 
+// selectors
 export const getPermissionStatus = (state) => {
   return state.camera.cameraStatus;
+};
+
+export const getCameraAspectRatio = (state) => {
+  return state.camera.cameraAspectRatio;
 };
 
 export const getCapturedPhoto = (state) => {
