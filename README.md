@@ -5,18 +5,16 @@ A fish identifier for anglers and fish hobbyists
 
 ## Installation
 
-When installing expo libraries use
+When installing expo libraries/SDKs use
 
 ```
-expo install [library] --npm
+expo install [library]
 ```
-
-with the --npm flag set.
 
 For regular javascript and react libraries, simply run
 
 ```
-npm install [library]
+yarn add [library]
 ```
 
 ## Usage
@@ -24,7 +22,7 @@ npm install [library]
 To start the application, navigate to the client directory and run
 
 ```
-npm start
+yarn start
 ```
 
 ## Contributing
