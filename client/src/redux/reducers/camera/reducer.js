@@ -4,7 +4,6 @@ import * as cameraTypes from './actionTypes';
 // redux state
 const initialState = {
   cameraStatus: 'unauthorized',
-  cameraAspectRatio: '4:3',
   cameraErrMsg: null,
   photo: null,
 };
@@ -28,10 +27,6 @@ export default function reducer(state = initialState, action = {}) {
 // selectors
 export const getPermissionStatus = (state) => {
   return state.camera.cameraStatus;
-};
-
-export const getCameraAspectRatio = (state) => {
-  return state.camera.cameraAspectRatio;
 };
 
 export const getCapturedPhoto = (state) => {
