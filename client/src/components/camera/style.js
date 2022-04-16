@@ -1,4 +1,5 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
+const { height, width } = Dimensions.get('window');
 
 // stylesheet for camera
 export default StyleSheet.create({
@@ -25,12 +26,11 @@ export default StyleSheet.create({
   },
   capture: {
     backgroundColor: '#f5f6f5',
-    borderRadius: 5,
     height: 60,
     width: 60,
     borderRadius: 30,
-    alignSelf: 'flex-end',
-    marginBottom: 60,
+    position: 'absolute',
+    top: height * 0.6,
   },
   previewContiner: {
     backgroundColor: 'transparent',
@@ -38,6 +38,7 @@ export default StyleSheet.create({
     width: '100%',
     height: '100%',
     padding: 0,
+    zIndex: 2,
   },
   previewImgBg: {
     flex: 1,
@@ -71,8 +72,24 @@ export default StyleSheet.create({
     position: 'absolute',
     height: 50,
     width: '100%',
-    opacity: 0.65,
-    backgroundColor: 'lightgrey',
+    opacity: 0.5,
+    backgroundColor: 'black',
     zIndex: 9,
+  },
+  saveBtn: {
+    zIndex: 11,
+    height: 30,
+    width: 100,
+    borderRadius: 10,
+    backgroundColor: 'white',
+    justifyContent: 'center',
+    alignItems: 'center',
+    position: 'absolute',
+    left: width / 2 - 50,
+    top: height * 0.8,
+  },
+  checkmarkWrapper: {
+    alignSelf: 'flex-end',
+    marginLeft: 10,
   },
 });

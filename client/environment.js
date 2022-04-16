@@ -7,7 +7,7 @@ const localhost =
 const ENV = {
   // development environment (where you develop new features)
   dev: {
-    apiUrl: localhost,
+    apiUrl: null,
     amplitudeApiKey: null,
   },
   // staging environment (where you test new features)

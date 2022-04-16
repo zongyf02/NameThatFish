@@ -1,30 +1,28 @@
-import {
-  Text,
-  View,
-  TouchableOpacity,
-  TouchableHighlight,
-  Dimensions,
-  Platform,
-} from 'react-native';
-import { useDispatch, useSelector } from 'react-redux';
-import { Camera } from 'expo-camera';
-import * as cameraTypes from '../../redux/reducers/camera/actionTypes';
-import * as cameraSelectors from '../../redux/reducers/camera/reducer';
+// Libraries
 import { useEffect, useState, useRef } from 'react';
 import { useIsFocused } from '@react-navigation/native';
 import { MaterialIcons } from '@expo/vector-icons';
 import style from './style';
 
+// Components
+import { View, TouchableOpacity, TouchableHighlight, Dimensions, Platform } from 'react-native';
+import { Camera } from 'expo-camera';
 import CameraPreview from './CameraPreview';
+
+// Flux
+import { useDispatch, useSelector } from 'react-redux';
+import * as cameraTypes from '../../redux/reducers/camera/actionTypes';
+import * as cameraSelectors from '../../redux/reducers/camera/reducer';
 
 /*
   The Camera component allows the user to take a picture using their device
 */
-const CameraPage = () => {
+const CameraPage = ({ navigation }) => {
   // state
   const CAMERA_TYPE = Camera.Constants.Type;
   const [type, setType] = useState(CAMERA_TYPE.back);
   const [mode, setMode] = useState('camera');
+  const camera = useRef(Camera);
 
   // Screen Ratio and Img Padding
   const [imagePadding, setImagePadding] = useState(0);
@@ -33,8 +31,7 @@ const CameraPage = () => {
   const screenRatio = height / width;
   const [isRatioSet, setIsRatioSet] = useState(false);
 
-  const camera = useRef(Camera);
-  // This hook returns `true` if the component is focused, `false` otherwise
+  // returns `true` if the component is focused, `false` otherwise
   const isFocused = useIsFocused();
 
   // dispatchers
@@ -47,7 +44,6 @@ const CameraPage = () => {
   };
 
   // selectors
-  const cameraAspectRatio = useSelector(cameraSelectors.getCameraAspectRatio);
   const cameraStatus = useSelector(cameraSelectors.getPermissionStatus);
   const photo = useSelector(cameraSelectors.getCapturedPhoto);
 
@@ -74,16 +70,12 @@ const CameraPage = () => {
     setMode('camera');
   };
 
-  // math to prep camera ratio
+  // preps camera ratio
   const prepareRatio = async () => {
-    let desiredRatio = '4:3'; // Start with the system default
     // This issue only affects Android
     if (Platform.OS === 'android') {
       const ratios = await camera.current.getSupportedRatiosAsync();
 
-      // Calculate the width/height of each of the supported camera ratios
-      // These width/height are measured in landscape mode
-      // find the ratio that is closest to the screen ratio without going over
       let distances = {};
       let realRatios = {};
       let minDistance = null;
@@ -103,14 +95,12 @@ const CameraPage = () => {
         }
       }
       // set the best match
-      desiredRatio = minDistance;
-      //  calculate the difference between the camera width and the screen height
+      let desiredRatio = minDistance ? minDistance : '4:3';
+      //  calculates the difference between the camera width and the screen height
       const remainder = Math.floor((height - realRatios[desiredRatio] * width) / 2);
-      // set the preview padding and preview ratio
+      // sets the preview padding and preview ratio
       setImagePadding(remainder);
       setRatio(desiredRatio);
-      // Set a flag so we don't do this
-      // calculation each time the screen refreshes
       setIsRatioSet(true);
     }
   };
@@ -147,7 +137,9 @@ const CameraPage = () => {
           </View>
         </Camera>
       )}
-      {mode === 'preview' && <CameraPreview photo={photo} resetCamera={resetCamera} />}
+      {mode === 'preview' && (
+        <CameraPreview navigation={navigation} photo={photo} resetCamera={resetCamera} />
+      )}
     </View>
   );
 };
