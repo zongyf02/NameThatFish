@@ -8,6 +8,7 @@ from functools import wraps
 from fish import app
 from backend.database.orm.models import User, Picture
 from backend.database.orm.session_context import SessionContext
+from backend.model.fish_identifier import model
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
