@@ -7,7 +7,7 @@ const UploadCameraView = () => {
     { name: 'Upload', component: ImgUploader, iconId: 'upload', iconSize: 30 },
     { name: 'Camera', component: Camera, iconId: 'camera', iconSize: 30 },
   ];
-  return <BottomTab screens={screens} />;
+  return <BottomTab screens={screens} />
 };
 
 export default UploadCameraView;

@@ -1,11 +1,7 @@
-import { Text, View } from 'react-native';
+import Result from '../components/result/Result';
 
 const HomeView = () => {
-  return (
-    <View>
-      <Text>Testing HomeScreen!</Text>
-    </View>
-  );
+  return <Result />
 };
 
 export default HomeView;

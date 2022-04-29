@@ -12,6 +12,7 @@ export default function App() {
     { name: 'Upload / Camera', component: UploadOrCamera },
     { name: 'Home', component: Home },
   ];
+
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>

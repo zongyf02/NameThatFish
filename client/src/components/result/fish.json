@@ -1,0 +1,173 @@
+[
+  {
+    "name": "Atlantic Salmon",
+    "scientificName": "Salmo salar",
+    "description": "Atlantic salmon are the largest species in their genus, Salmo. After two years at sea, the fish average 71 to 76 cm (28 to 30 in) in length and 3.6 to 5.4 kg (7.9 to 11.9 lb) in weight. But specimens that spend four or more winters feeding at sea can be much larger. An Atlantic salmon netted in 1960 in Scotland, in the estuary of the river Hope, weighed 49.44 kg (109.0 lb), the heaviest recorded in all available literature. Another netted in 1925 in Norway measured 160.65 cm (63.25 in) in length, the longest Atlantic salmon on record. The colouration of young Atlantic salmon does not resemble the adult stage. While they live in fresh water, they have blue and red spots. At maturity, they take on a silver-blue sheen. The easiest way of identifying them as an adult is by the black spots predominantly above the lateral line, though the caudal fin is usually unspotted. When they reproduce, males take on a slight green or red colouration. The salmon has a fusiform body, and well-developed teeth. All fins, except the adipose fin, are bordered with black.",
+    "habitat": "The natural breeding grounds of Atlantic salmon are rivers in Europe and the northeastern coast of North America. In Europe, Atlantic salmon are still found as far south as Spain, and as far north as Russia.[citation needed] Because of sport-fishing, some of the species' southern populations in northern Spain are growing smaller. The species distribution is easily influenced by changes in freshwater habitat and climate. Atlantic salmon are a cold-water fish species and are particularly sensitive to changes in water temperature.",
+    "diet": "Young salmon begin a feeding response within a few days. After the yolk sac is absorbed by the body, they begin to hunt. Juveniles start with tiny invertebrates, but as they mature, they may occasionally eat small fish. During this time, they hunt both in the substrate and in the current. Some have been known to eat salmon eggs. The most commonly eaten foods include caddisflies, blackflies, mayflies, and stoneflies. As adults, the salmon prefer capelin as their meal of choice. Capelin are elongated silvery fish that grow up to 20–25 centimetres (8–10 in) long.",
+    "lifecycle": "Most Atlantic salmon follow an anadromous migration pattern, in that they undergo their greatest feeding and growth in saltwater; however, adults return to spawn in native freshwater streams where the eggs hatch and juveniles grow through several distinct stages.[citation needed] Atlantic salmon do not require saltwater. Numerous examples of fully freshwater (i.e., 'landlocked') populations of the species exist throughout the Northern Hemisphere, including a now extinct population in Lake Ontario, which have been shown in recent studies to have spent their entire life cycle in watershed of the lake. In North America, the landlocked strains are frequently known as ouananiche.[citation needed]",
+    "pictures": ["../../../assets/atlanticSalmon"]
+  },
+  {
+    "name": "Bluegill",
+    "scientificName": "Lepomis macrochirus",
+    "description": "The bluegill is a laterally compressed or flattened sunfish, olive in color with an orange to yellow breast with clear fins except for a distinguishing large black smudge near the bottom of the soft dorsal fin. The operculum or gill cover is tipped distinctly with black and there are several wide dark vertical bars on the side of the body. Bluegills have small mouths with no teeth on the tongue. The bluegill name comes from breeding males who exhibit pale blue to violet on the top half of the body with powder blue on the lower jaw and lower portion of the operculum or gill cover. The breeding males also develop a red breast.",
+    "habitat": "Bluegills are very tolerant of many habitat types including pools of creeks and rivers, swamps, oxbow lakes, ponds, vegetated shores of impoundments, man-made lakes, ponds and retention basins. They prefer sluggish or slow-moving water.",
+    "diet": "Bluegills are opportunistic carnivores feeding on a variety of prey types. They will feed on mature and immature insects, small invertebrates, crayfish, mollusks (mussels) and other fishes. They have small mouths; however, the larger the bluegill the larger the prey type they can consume. They mostly feed near the surface.",
+    "lifecycle": "Spawning season for bluegills starts late in May and extends into August. The peak of the spawning season usually occurs in June in waters of 67 to 80 °F (19 to 27 °C). The male bluegills arrive first at the mating site. They will make a spawning bed of six to 12 inches in diameter in shallow water, clustering as many as 50 beds together. The males scoop out these beds in gravel or sand. Males tend to be very protective and chase everything away from their nests, especially other male bluegills. Some bluegills, regardless of their small size, will even attack snorkelers if they approach the edge of the nest. As a female approaches, the male will begin circling and making grunting noises. The motion and sound of the males seem to attract the females. Females are very choosy and will usually pick males with larger bodies and 'ears', making larger size a desirable trait for males to have. If the female enters the nest, both the male and female will circle each other, with the male expressing very aggressive behavior toward the female. If the female stays, the pair will enter the nest and come to rest in the middle. With the male in an upright posture, the pair will touch bellies, quiver, and spawn. These actions are repeated at irregular intervals several times in a row. Once the spawning is done, the male will chase the female out of the nest and guard the eggs. The fertilization process is entirely external. The male's sperm combines with the female's eggs in the water. Smaller males will often hide in nearby weeds and dart into the nest as they attempt to fertilize the eggs. They then quickly dart away. The size of the female plays a large role in how many eggs will be produced. A small female can produce as few as 1,000 eggs, and a large, healthy female can produce up to 100,000 eggs. The male continues to watch over the nest until the larvae are able to hatch and swim away on their own. The bluegill generally begins its spawning career at one year of age, but has been found to spawn as early as four months of age under favorable conditions. Anglers find spawning season to be a very successful time to fish for bluegills, as they aggressively attack anything, including a hook, that comes near. The growth of the bluegill is very rapid in the first three years, but slows considerably once the fish reaches maturity. Many fish reach five to eight years old, and in extreme cases, can live 11 years.",
+    "pictures": ["../../../assets/Bluegill"]
+  },
+  {
+    "name": "Brook Trout",
+    "scientificName": "Salvelinus fontinalis",
+    "description": "The brook trout has a dark green to brown color, with a distinctive marbled pattern (called vermiculation) of lighter shades across the flanks and back and extending at least to the dorsal fin, and often to the tail. A distinctive sprinkling of red dots, surrounded by blue halos, occurs along the flanks. The belly and lower fins are reddish in color, the latter with white leading edges. Often, the belly, particularly of the males, becomes very red or orange when the fish are spawning.[citation needed] Typical lengths of the brook trout vary from 25 to 65 cm (9.8 to 25.6 in), and weights from 0.3 to 3 kg (0.66 to 6.61 lb). The maximum recorded length is 86 cm (34 in) and maximum weight 6.6 kg (15 lb). Brook trout can reach at least seven years of age, with reports of 15-year-old specimens observed in California habitats to which the species has been introduced. Growth rates are dependent on season, age, water and ambient air temperatures, and flow rates. In general, flow rates affect the rate of change in the relationship between temperature and growth rate. For example, in spring, growth increased with temperature at a faster rate with high flow rates than with low flow rates.",
+    "habitat": "The brook trout inhabits large and small lakes, rivers, streams, creeks, and spring ponds. They prefer clear waters of high purity and a narrow pH range and are sensitive to poor oxygenation, pollution, and changes in pH caused by environmental effects such as acid rain. The typical pH range of brook trout waters is 5.0 to 7.5, with pH extremes of 3.5 to 9.8 possible. Water temperatures typically range from 34 to 72 °F (1 to 22 °C). Warm summer temperatures and low flow rates are stressful on brook trout populations—especially larger fish.",
+    "diet": "Brook trout have a diverse diet that includes larval, pupal, and adult forms of aquatic insects (typically caddisflies, stoneflies, mayflies, and aquatic dipterans), and adult forms of terrestrial insects (typically ants, beetles, grasshoppers, and crickets) that fall into the water, crustaceans, frogs and other amphibians, molluscs, smaller fish, invertebrates, and even small aquatic mammals such as voles.[citation needed]",
+    "lifecycle": "The female constructs a depression in a location in the stream bed, sometimes referred to as a 'redd', where groundwater percolates upward through the gravel. One or more males approach the female, fertilizing the eggs as the female expresses them. Most spawnings involve peripheral males, which directly influences the number of eggs that survive into adulthood. In general, the larger the number of peripheral males present, the more likely the eggs will be cannibalized. The eggs are slightly denser than water. The female then buries the eggs in a small gravel mound; they hatch in 95 to 100 days.[citation needed]",
+    "pictures": ["../../../assets/BrookTrout"]
+  },
+  {
+    "name": "Channel Catfish",
+    "scientificName": "",
+    "description": "",
+    "habitat": "",
+    "diet": "",
+    "lifecycle": "",
+    "pictures": ["../../../assets/atlanticSalmon"]
+  },
+  {
+    "name": "Chinnok Salmon",
+    "scientificName": "",
+    "description": "",
+    "habitat": "",
+    "diet": "",
+    "lifecycle": "",
+    "pictures": ["../../../assets/atlanticSalmon"]
+  },
+  {
+    "name": "Crappie",
+    "scientificName": "",
+    "description": "",
+    "habitat": "",
+    "diet": "",
+    "lifecycle": "",
+    "pictures": ["../../../assets/atlanticSalmon"]
+  },
+  {
+    "name": "Flathead Catfish",
+    "scientificName": "",
+    "description": "",
+    "habitat": "",
+    "diet": "",
+    "lifecycle": "",
+    "pictures": ["../../../assets/atlanticSalmon"]
+  },
+  {
+    "name": "Lake Sturgeon",
+    "scientificName": "",
+    "description": "",
+    "habitat": "",
+    "diet": "",
+    "lifecycle": "",
+    "pictures": ["../../../assets/atlanticSalmon"]
+  },
+  {
+    "name": "Lamphrey",
+    "scientificName": "",
+    "description": "",
+    "habitat": "",
+    "diet": "",
+    "lifecycle": "",
+    "pictures": ["../../../assets/atlanticSalmon"]
+  },
+  {
+    "name": "Largemouth Bass",
+    "scientificName": "",
+    "description": "",
+    "habitat": "",
+    "diet": "",
+    "lifecycle": "",
+    "pictures": ["../../../assets/atlanticSalmon"]
+  },
+  {
+    "name": "Muskie",
+    "scientificName": "",
+    "description": "",
+    "habitat": "",
+    "diet": "",
+    "lifecycle": "",
+    "pictures": ["../../../assets/atlanticSalmon"]
+  },
+  {
+    "name": "Northern Pike",
+    "scientificName": "",
+    "description": "",
+    "habitat": "",
+    "diet": "",
+    "lifecycle": "",
+    "pictures": ["../../../assets/atlanticSalmon"]
+  },
+  {
+    "name": "Rainbow Trout",
+    "scientificName": "",
+    "description": "",
+    "habitat": "",
+    "diet": "",
+    "lifecycle": "",
+    "pictures": ["../../../assets/atlanticSalmon"]
+  },
+  {
+    "name": "Rock Bass",
+    "scientificName": "",
+    "description": "",
+    "habitat": "",
+    "diet": "",
+    "lifecycle": "",
+    "pictures": ["../../../assets/atlanticSalmon"]
+  },
+  {
+    "name": "Smallmouth Bass",
+    "scientificName": "",
+    "description": "",
+    "habitat": "",
+    "diet": "",
+    "lifecycle": "",
+    "pictures": ["../../../assets/atlanticSalmon"]
+  },
+  {
+    "name": "Sunfish",
+    "scientificName": "",
+    "description": "",
+    "habitat": "",
+    "diet": "",
+    "lifecycle": "",
+    "pictures": ["../../../assets/atlanticSalmon"]
+  },
+  {
+    "name": "Walleye",
+    "scientificName": "",
+    "description": "",
+    "habitat": "",
+    "diet": "",
+    "lifecycle": "",
+    "pictures": ["../../../assets/atlanticSalmon"]
+  },
+  {
+    "name": "White Perch",
+    "scientificName": "",
+    "description": "",
+    "habitat": "",
+    "diet": "",
+    "lifecycle": "",
+    "pictures": ["../../../assets/atlanticSalmon"]
+  },
+  {
+    "name": "Yellow Perch",
+    "scientificName": "",
+    "description": "",
+    "habitat": "",
+    "diet": "",
+    "lifecycle": "",
+    "pictures": ["../../../assets/atlanticSalmon"]
+  }
+]
