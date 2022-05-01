@@ -1,4 +1,4 @@
-import { StyleSheet, Dimensions } from 'react-native';
+import { StyleSheet, Platform, StatusBar, Dimensions } from 'react-native';
 const { height, width } = Dimensions.get('window');
 
 // stylesheet for camera
@@ -10,8 +10,7 @@ export default StyleSheet.create({
   },
   container: {
     flex: 1,
-    backgroundColor: 'black',
-    paddingTop: 10,
+    paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
   },
   buttonContainer: {
     flex: 1,
