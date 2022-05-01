@@ -15,7 +15,7 @@ import {
   FlatList,
 } from 'react-native';
 import Carousel, { ParallaxImage } from 'react-native-snap-carousel';
-import { Ionicons } from '@expo/vector-icons';
+import { AntDesign, MaterialIcons } from '@expo/vector-icons';
 
 // Flux
 import { useDispatch, useSelector } from 'react-redux';
@@ -28,7 +28,6 @@ const { width: screenWidth } = Dimensions.get('window');
 const Gallery = () => {
   const { width: screenWidth } = Dimensions.get('window');
   const [isListView, setListView] = useState(false);
-  const [galleryIcon, setGalleryIcon] = useState('contract');
   const carouselRef = useRef(null);
 
   // dispatchers
@@ -80,7 +79,6 @@ const Gallery = () => {
 
   const switchGalleryView = () => {
     setListView(!isListView);
-    setGalleryIcon(galleryIcon == 'contract' ? 'expand' : 'contract');
   };
 
   return (
@@ -96,7 +94,11 @@ const Gallery = () => {
       >
         <Text style={styles.galleryTitle}>NameThatFish</Text>
         <TouchableOpacity onPress={switchGalleryView}>
-          <Ionicons name={galleryIcon} size={28} style={styles.galleryIcon} />
+          {isListView ? (
+            <MaterialIcons name='view-carousel' size={32} style={styles.galleryIcon}/>
+          ) : (
+            <AntDesign name='appstore1' size={28} style={styles.galleryIcon} />
+          )}
         </TouchableOpacity>
       </View>
       <View style={{ flex: 1, justifyContent: 'center' }}>
