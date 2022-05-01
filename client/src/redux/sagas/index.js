@@ -1,9 +1,10 @@
 import { all } from 'redux-saga/effects';
 import { cameraSaga } from './cameraSaga';
 import { imagesSaga } from './imagesSaga';
+import { modelSaga } from './modelSaga';
 
 export default function* rootSaga() {
-  yield all([...cameraSaga, ...imagesSaga]);
+  yield all([...cameraSaga, ...imagesSaga, ...modelSaga]);
 }
 
 // logger middleware used for debugging

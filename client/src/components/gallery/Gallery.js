@@ -1,34 +1,30 @@
 // Libraries
-// import style from './style';
-import React, { useRef, useState, useEffect } from 'react';
+import styles from './style';
+import React, { useEffect, useRef, useState } from 'react';
 
 // Components
-import {
-  View,
-  Text,
-  Dimensions,
-  SafeAreaView,
-  StyleSheet,
-  TouchableOpacity,
-  Platform,
-  StatusBar,
-  FlatList,
-} from 'react-native';
+import { View, Text, Dimensions, SafeAreaView, TouchableOpacity, FlatList } from 'react-native';
 import Carousel, { ParallaxImage } from 'react-native-snap-carousel';
-import { AntDesign, MaterialIcons } from '@expo/vector-icons';
+import { AntDesign, MaterialIcons, FontAwesome } from '@expo/vector-icons';
+import { Card } from '../card';
 
 // Flux
 import { useDispatch, useSelector } from 'react-redux';
 import * as imagesTypes from '../../redux/reducers/images/actionTypes';
 import * as imagesSelectors from '../../redux/reducers/images/reducer';
-import { Card } from '../card';
+import * as modelTypes from '../../redux/reducers/model/actionTypes';
+import * as modelSelectors from '../../redux/reducers/model/reducer';
 
 const { width: screenWidth } = Dimensions.get('window');
 
-const Gallery = () => {
-  const { width: screenWidth } = Dimensions.get('window');
+const Gallery = ({ navigation }) => {
+  // state
   const [isListView, setListView] = useState(false);
   const carouselRef = useRef(null);
+
+  // selectors
+  const photos = useSelector(imagesSelectors.getPhotos);
+  const result = useSelector(modelSelectors.getResults);
 
   // dispatchers
   const dispatch = useDispatch();
@@ -39,14 +35,27 @@ const Gallery = () => {
     dispatch({ type: imagesTypes.CLEAR_PHOTOS });
   };
 
-  // selectors
-  const photos = useSelector(imagesSelectors.getPhotos);
+  // if result is cached use result, otherwise fetch from api
+  const getResult = (item) => {
+    if (!result) {
+      dispatch({ type: modelTypes.GET_RESULT_REQUESTED, photo: item.photo, id: item.id });
+    }
+  };
+
+  useEffect(() => {
+    if (result) {
+      navigation.navigate('Library');
+    }
+  }, [result]);
 
   const onPressPhoto = (item) => {
+    // adds more images to gallery
     if (item.title === 'upload more') {
       addPhotos();
-    } else {
-      // selectItems([...selectedItems, item.id]);
+    }
+    // sends selected image to be processed for result
+    else {
+      getResult(item);
     }
   };
 
@@ -93,11 +102,14 @@ const Gallery = () => {
         }}
       >
         <Text style={styles.galleryTitle}>NameThatFish</Text>
+        <TouchableOpacity onPress={clearPhotos}>
+          <FontAwesome name="remove" size={26} style={styles.galleryIcon} />
+        </TouchableOpacity>
         <TouchableOpacity onPress={switchGalleryView}>
           {isListView ? (
-            <MaterialIcons name='view-carousel' size={32} style={styles.galleryIcon}/>
+            <MaterialIcons name="view-carousel" size={32} style={styles.galleryIcon} />
           ) : (
-            <AntDesign name='appstore1' size={28} style={styles.galleryIcon} />
+            <AntDesign name="appstore1" size={28} style={styles.galleryIcon} />
           )}
         </TouchableOpacity>
       </View>
@@ -132,42 +144,3 @@ const Gallery = () => {
 };
 
 export default Gallery;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
-  },
-  item: {
-    width: screenWidth - 125,
-    height: screenWidth,
-  },
-  imageContainer: {
-    flex: 1,
-    marginBottom: Platform.select({ ios: 0, android: 1 }), // Prevent a random Android rendering issue
-    backgroundColor: 'white',
-    borderRadius: 15,
-  },
-  image: {
-    ...StyleSheet.absoluteFillObject,
-    resizeMode: 'contain',
-  },
-  itemLabel: {
-    color: 'grey',
-    opacity: 0.35,
-    fontSize: 18,
-    fontWeight: 'bold',
-    alignSelf: 'center',
-    marginTop: 10,
-  },
-  galleryTitle: {
-    fontSize: 32,
-    fontWeight: 'bold',
-    color: '#00a4e6',
-    opacity: 0.7,
-  },
-  galleryIcon: {
-    color: 'black',
-    opacity: 0.5,
-  },
-});
