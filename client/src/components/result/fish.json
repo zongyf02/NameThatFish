@@ -3,9 +3,10 @@
     "name": "Atlantic Salmon",
     "scientificName": "Salmo salar",
     "description": "Atlantic salmon are the largest species in their genus, Salmo. After two years at sea, the fish average 71 to 76 cm (28 to 30 in) in length and 3.6 to 5.4 kg (7.9 to 11.9 lb) in weight. But specimens that spend four or more winters feeding at sea can be much larger. An Atlantic salmon netted in 1960 in Scotland, in the estuary of the river Hope, weighed 49.44 kg (109.0 lb), the heaviest recorded in all available literature. Another netted in 1925 in Norway measured 160.65 cm (63.25 in) in length, the longest Atlantic salmon on record. The colouration of young Atlantic salmon does not resemble the adult stage. While they live in fresh water, they have blue and red spots. At maturity, they take on a silver-blue sheen. The easiest way of identifying them as an adult is by the black spots predominantly above the lateral line, though the caudal fin is usually unspotted. When they reproduce, males take on a slight green or red colouration. The salmon has a fusiform body, and well-developed teeth. All fins, except the adipose fin, are bordered with black.",
-    "habitat": "The natural breeding grounds of Atlantic salmon are rivers in Europe and the northeastern coast of North America. In Europe, Atlantic salmon are still found as far south as Spain, and as far north as Russia.[citation needed] Because of sport-fishing, some of the species' southern populations in northern Spain are growing smaller. The species distribution is easily influenced by changes in freshwater habitat and climate. Atlantic salmon are a cold-water fish species and are particularly sensitive to changes in water temperature.",
+    "habitat": "The natural breeding grounds of Atlantic salmon are rivers in Europe and the northeastern coast of North America. In Europe, Atlantic salmon are still found as far south as Spain, and as far north as Russia. Because of sport-fishing, some of the species' southern populations in northern Spain are growing smaller. The species distribution is easily influenced by changes in freshwater habitat and climate. Atlantic salmon are a cold-water fish species and are particularly sensitive to changes in water temperature.",
     "diet": "Young salmon begin a feeding response within a few days. After the yolk sac is absorbed by the body, they begin to hunt. Juveniles start with tiny invertebrates, but as they mature, they may occasionally eat small fish. During this time, they hunt both in the substrate and in the current. Some have been known to eat salmon eggs. The most commonly eaten foods include caddisflies, blackflies, mayflies, and stoneflies. As adults, the salmon prefer capelin as their meal of choice. Capelin are elongated silvery fish that grow up to 20–25 centimetres (8–10 in) long.",
-    "lifecycle": "Most Atlantic salmon follow an anadromous migration pattern, in that they undergo their greatest feeding and growth in saltwater; however, adults return to spawn in native freshwater streams where the eggs hatch and juveniles grow through several distinct stages.[citation needed] Atlantic salmon do not require saltwater. Numerous examples of fully freshwater (i.e., 'landlocked') populations of the species exist throughout the Northern Hemisphere, including a now extinct population in Lake Ontario, which have been shown in recent studies to have spent their entire life cycle in watershed of the lake. In North America, the landlocked strains are frequently known as ouananiche.[citation needed]",
+    "lifecycle": "Most Atlantic salmon follow an anadromous migration pattern, in that they undergo their greatest feeding and growth in saltwater; however, adults return to spawn in native freshwater streams where the eggs hatch and juveniles grow through several distinct stages. Atlantic salmon do not require saltwater. Numerous examples of fully freshwater (i.e., 'landlocked') populations of the species exist throughout the Northern Hemisphere, including a now extinct population in Lake Ontario, which have been shown in recent studies to have spent their entire life cycle in watershed of the lake. In North America, the landlocked strains are frequently known as ouananiche.",
+    "references": ["https://en.wikipedia.org/wiki/Atlantic_salmon"],
     "pictures": ["../../../assets/atlanticSalmon"]
   },
   {
@@ -15,159 +16,183 @@
     "habitat": "Bluegills are very tolerant of many habitat types including pools of creeks and rivers, swamps, oxbow lakes, ponds, vegetated shores of impoundments, man-made lakes, ponds and retention basins. They prefer sluggish or slow-moving water.",
     "diet": "Bluegills are opportunistic carnivores feeding on a variety of prey types. They will feed on mature and immature insects, small invertebrates, crayfish, mollusks (mussels) and other fishes. They have small mouths; however, the larger the bluegill the larger the prey type they can consume. They mostly feed near the surface.",
     "lifecycle": "Spawning season for bluegills starts late in May and extends into August. The peak of the spawning season usually occurs in June in waters of 67 to 80 °F (19 to 27 °C). The male bluegills arrive first at the mating site. They will make a spawning bed of six to 12 inches in diameter in shallow water, clustering as many as 50 beds together. The males scoop out these beds in gravel or sand. Males tend to be very protective and chase everything away from their nests, especially other male bluegills. Some bluegills, regardless of their small size, will even attack snorkelers if they approach the edge of the nest. As a female approaches, the male will begin circling and making grunting noises. The motion and sound of the males seem to attract the females. Females are very choosy and will usually pick males with larger bodies and 'ears', making larger size a desirable trait for males to have. If the female enters the nest, both the male and female will circle each other, with the male expressing very aggressive behavior toward the female. If the female stays, the pair will enter the nest and come to rest in the middle. With the male in an upright posture, the pair will touch bellies, quiver, and spawn. These actions are repeated at irregular intervals several times in a row. Once the spawning is done, the male will chase the female out of the nest and guard the eggs. The fertilization process is entirely external. The male's sperm combines with the female's eggs in the water. Smaller males will often hide in nearby weeds and dart into the nest as they attempt to fertilize the eggs. They then quickly dart away. The size of the female plays a large role in how many eggs will be produced. A small female can produce as few as 1,000 eggs, and a large, healthy female can produce up to 100,000 eggs. The male continues to watch over the nest until the larvae are able to hatch and swim away on their own. The bluegill generally begins its spawning career at one year of age, but has been found to spawn as early as four months of age under favorable conditions. Anglers find spawning season to be a very successful time to fish for bluegills, as they aggressively attack anything, including a hook, that comes near. The growth of the bluegill is very rapid in the first three years, but slows considerably once the fish reaches maturity. Many fish reach five to eight years old, and in extreme cases, can live 11 years.",
+    "references": ["https://en.wikipedia.org/wiki/Bluegill"],
     "pictures": ["../../../assets/Bluegill"]
   },
   {
     "name": "Brook Trout",
     "scientificName": "Salvelinus fontinalis",
-    "description": "The brook trout has a dark green to brown color, with a distinctive marbled pattern (called vermiculation) of lighter shades across the flanks and back and extending at least to the dorsal fin, and often to the tail. A distinctive sprinkling of red dots, surrounded by blue halos, occurs along the flanks. The belly and lower fins are reddish in color, the latter with white leading edges. Often, the belly, particularly of the males, becomes very red or orange when the fish are spawning.[citation needed] Typical lengths of the brook trout vary from 25 to 65 cm (9.8 to 25.6 in), and weights from 0.3 to 3 kg (0.66 to 6.61 lb). The maximum recorded length is 86 cm (34 in) and maximum weight 6.6 kg (15 lb). Brook trout can reach at least seven years of age, with reports of 15-year-old specimens observed in California habitats to which the species has been introduced. Growth rates are dependent on season, age, water and ambient air temperatures, and flow rates. In general, flow rates affect the rate of change in the relationship between temperature and growth rate. For example, in spring, growth increased with temperature at a faster rate with high flow rates than with low flow rates.",
+    "description": "The brook trout has a dark green to brown color, with a distinctive marbled pattern (called vermiculation) of lighter shades across the flanks and back and extending at least to the dorsal fin, and often to the tail. A distinctive sprinkling of red dots, surrounded by blue halos, occurs along the flanks. The belly and lower fins are reddish in color, the latter with white leading edges. Often, the belly, particularly of the males, becomes very red or orange when the fish are spawning. Typical lengths of the brook trout vary from 25 to 65 cm (9.8 to 25.6 in), and weights from 0.3 to 3 kg (0.66 to 6.61 lb). The maximum recorded length is 86 cm (34 in) and maximum weight 6.6 kg (15 lb). Brook trout can reach at least seven years of age, with reports of 15-year-old specimens observed in California habitats to which the species has been introduced. Growth rates are dependent on season, age, water and ambient air temperatures, and flow rates. In general, flow rates affect the rate of change in the relationship between temperature and growth rate. For example, in spring, growth increased with temperature at a faster rate with high flow rates than with low flow rates.",
     "habitat": "The brook trout inhabits large and small lakes, rivers, streams, creeks, and spring ponds. They prefer clear waters of high purity and a narrow pH range and are sensitive to poor oxygenation, pollution, and changes in pH caused by environmental effects such as acid rain. The typical pH range of brook trout waters is 5.0 to 7.5, with pH extremes of 3.5 to 9.8 possible. Water temperatures typically range from 34 to 72 °F (1 to 22 °C). Warm summer temperatures and low flow rates are stressful on brook trout populations—especially larger fish.",
-    "diet": "Brook trout have a diverse diet that includes larval, pupal, and adult forms of aquatic insects (typically caddisflies, stoneflies, mayflies, and aquatic dipterans), and adult forms of terrestrial insects (typically ants, beetles, grasshoppers, and crickets) that fall into the water, crustaceans, frogs and other amphibians, molluscs, smaller fish, invertebrates, and even small aquatic mammals such as voles.[citation needed]",
-    "lifecycle": "The female constructs a depression in a location in the stream bed, sometimes referred to as a 'redd', where groundwater percolates upward through the gravel. One or more males approach the female, fertilizing the eggs as the female expresses them. Most spawnings involve peripheral males, which directly influences the number of eggs that survive into adulthood. In general, the larger the number of peripheral males present, the more likely the eggs will be cannibalized. The eggs are slightly denser than water. The female then buries the eggs in a small gravel mound; they hatch in 95 to 100 days.[citation needed]",
+    "diet": "Brook trout have a diverse diet that includes larval, pupal, and adult forms of aquatic insects (typically caddisflies, stoneflies, mayflies, and aquatic dipterans), and adult forms of terrestrial insects (typically ants, beetles, grasshoppers, and crickets) that fall into the water, crustaceans, frogs and other amphibians, molluscs, smaller fish, invertebrates, and even small aquatic mammals such as voles.",
+    "lifecycle": "The female constructs a depression in a location in the stream bed, sometimes referred to as a 'redd', where groundwater percolates upward through the gravel. One or more males approach the female, fertilizing the eggs as the female expresses them. Most spawnings involve peripheral males, which directly influences the number of eggs that survive into adulthood. In general, the larger the number of peripheral males present, the more likely the eggs will be cannibalized. The eggs are slightly denser than water. The female then buries the eggs in a small gravel mound; they hatch in 95 to 100 days.",
+    "references": ["https://en.wikipedia.org/wiki/Brook_trout"],
     "pictures": ["../../../assets/BrookTrout"]
   },
   {
     "name": "Channel Catfish",
-    "scientificName": "",
-    "description": "",
-    "habitat": "",
-    "diet": "",
-    "lifecycle": "",
-    "pictures": ["../../../assets/atlanticSalmon"]
+    "scientificName": "Ictalurus punctatus",
+    "description": "The channel catfish is North America's most numerous catfish species. It is the official fish of Kansas, Missouri, Iowa, Nebraska, and Tennessee, and is informally referred to as a \"channel cat\". In the United States, they are the most fished catfish species with around 8 million anglers targeting them per year. The popularity of channel catfish for food has contributed to the rapid expansion of aquaculture of this species in the United States.[2] It has also been widely introduced in Europe, Asia and South America, and it is legally considered an invasive species in many countries.",
+    "habitat": "The channel catfish can be found in deep pools and runs in small to large rivers with sand, gravel or cobble substrates, and cool, clear, deeper waters of lakes; preferred water temperature range 25-31°C",
+    "diet": "Adult channel catfish, over 45 cm (17.7 in), consume fishes such as yellow perch and sunfish. The diet of adults consists of snails, clams, crustaceans (such as crayfish), snakes, frogs, small fish, insects, aquatic plants, algae, seeds, grains, nuts, and even small birds and small mammals occasionally. Younger channel catfish are more consistently omnivorous, eating a large variety of plants and animals.",
+    "lifecycle": "Pairs begin forming relationships before the breeding season. They nest in holes or crevices to keep their eggs safe and away from the current. The female lays her eggs and the male fertilizes them. Clutches can contain as many as 50,000 eggs! Afterwards, the male chases the female away and guards the eggs aggressively from intruders.",
+    "references": [
+      "https://animals.net/channel-catfish/",
+      "https://www.ontariofishes.ca/home.htm",
+      "https://en.wikipedia.org/wiki/Channel_catfish"
+    ],
+    "pictures": ["../../../assets/channelCatfish"]
   },
   {
-    "name": "Chinnok Salmon",
-    "scientificName": "",
-    "description": "",
-    "habitat": "",
-    "diet": "",
-    "lifecycle": "",
-    "pictures": ["../../../assets/atlanticSalmon"]
+    "name": "Chinook Salmon",
+    "scientificName": "Oncorhynchus tshawytscha",
+    "description": "When they’re in the ocean, Chinook salmon are blue-green on the back and top of the head with silvery sides and white bellies.In fresh water, when they are about to spawn, Chinook change to olive brown, red, or purplish. This color change is particularly evident in males. Chinook salmon are the largest of the Pacific salmon.",
+    "habitat": "Chinook salmon can be found in mid-waters (15-60 m) in or below the thermocline; preferred water temperature range 12-16°C",
+    "diet": "Young Chinook salmon like to eat insects and small crustaceans, particularly amphipods. Adult salmon dine mostly on other fish.",
+    "lifecycle": "Chinook may spend one to eight years in the ocean (averaging from three to four years)[18] before returning to their home rivers to spawn. The salmon undergo radical morphological changes as they prepare for the spawning event ahead. Salmon lose the silvery blue they had as ocean fish, and their color darkens, sometimes with a radical change in hue. Salmon are sexually dimorphic, and the male salmon develop canine-like teeth and their jaws develop a pronounced curve or hook, called a \"kype\"",
+    "references": [
+      "https://www.fisheries.noaa.gov/species/chinook-salmon, https://www.nwf.org/Educational-Resources/Wildlife-Guide/Fish/Chinook-Salmon, https://en.wikipedia.org/wiki/Chinook_salmon#Description"
+    ],
+    "pictures": ["../../../assets/chinookSalmon"]
   },
   {
     "name": "Crappie",
-    "scientificName": "",
-    "description": "",
-    "habitat": "",
-    "diet": "",
-    "lifecycle": "",
-    "pictures": ["../../../assets/atlanticSalmon"]
+    "scientificName": "Pomoxis annularis/nigromaculatus",
+    "description": "1. Generally silver in color with shades of brown or green along the back (white crappie).\n2. They have silver-gray to green coloring across their bodies, although they do not have a fully white underbelly (black crappie).",
+    "habitat": "Black crappie prefer cooler, deeper, clearer waters with more abundant aquatic vegetation than do white crappie. This includes still backwater lakes, sloughs, creeks, streams, lakes, and ponds. White crappie occur in creek backwaters, slow-flowing streams, sand- and mud-bottomed pools, small to large rivers, and lakes and ponds.",
+    "diet": "Both species of crappie as adults feed predominantly on smaller fish species, including the young of their own predators (which include the northern pike, muskellunge, and walleye). They have diverse diets, however, including zooplankton, insects, and crustaceans.",
+    "lifecycle": "This species is known to live at least 15 years. During the first four years of life, young black crappies grow quickly in the warm waters of the southern US while growth is slower in cooler northern U.S. waters. Black crappies reach maturity at 2-4 years of age (black crappie).",
+    "references": ["https://crappiefisher.com/what-does-a-crappie-fish-look-like/, https://en.wikipedia.org/wiki/Crappie"],
+    "pictures": ["../../../assets/crappie"]
   },
   {
     "name": "Flathead Catfish",
-    "scientificName": "",
-    "description": "",
-    "habitat": "",
-    "diet": "",
-    "lifecycle": "",
-    "pictures": ["../../../assets/atlanticSalmon"]
+    "scientificName": "Pylodictis olivaris",
+    "description": "The flathead catfish is a large species of North American freshwater catfish in the family Ictaluridae. ",
+    "habitat": "Ranging from the lower Great Lakes region to northern Mexico, it has been widely introduced and is an invasive species in some areas.",
+    "diet": "The flathead catfish prefers live prey. It is a voracious carnivore and feeds primarily on fishes, insects, annelid worms, and crustaceans. It also feeds on other small catfish and almost anything that moves and makes vibration.",
+    "lifecycle": "Spawning of P. olivaris occurs in late June and early July, and the nests are made in areas with submerged logs and other debris. The males, which also build the nests, fiercely and tirelessly defend and fan the clutch. The size of the clutch varies proportionately to the size of the female; an average of 2,640 eggs per kilogram of fish are laid.",
+    "references": ["https://en.wikipedia.org/wiki/Flathead_catfish#Distribution_and_habitat"],
+    "pictures": ["../../../assets/flatheadCatfish"]
   },
   {
     "name": "Lake Sturgeon",
-    "scientificName": "",
-    "description": "",
-    "habitat": "",
-    "diet": "",
-    "lifecycle": "",
-    "pictures": ["../../../assets/atlanticSalmon"]
+    "scientificName": "Acipenser fulvescens",
+    "description": "The lake sturgeon is a North American temperate freshwater fish, one of about 25 species of sturgeon. Like other sturgeons, this species is an evolutionarily ancient bottom feeder with a partly cartilaginous skeleton, an overall streamlined shape and skin bearing rows of bony plates on its sides and back.",
+    "habitat": "These sturgeon often migrate in search of food or suitable spawning locations, or in response to seasonal environmental conditions. Juveniles typically inhabit pools greater than about 6 feet in depth, and adults typically live deep in large lakes. They are not often far from suitable spawning locations. The abundance of prey also plays a large factor in finding a suitable habitat. Can be found in the Great Lakes.",
+    "diet": "Its diet consists of insect larvae, worms (including leeches), and other small organisms (primarily metazoan) it finds in the mud. Fish are rarely found in its diet and are likely incidental items only, with the possible exception of the invasive round goby.[9] Given that it is a large species surviving by feeding on very small species, its feeding ecology has been compared to that of large marine animals, like some whales, which survive by filter-feeding.",
+    "lifecycle": "Lake sturgeon have a very long lifespan. Males typically live for 55 years and females can live for 80 to 150 years. They grow quickly during a lengthy juvenile stage",
+    "references":[ "https://en.wikipedia.org/wiki/Lake_sturgeon#Distribution_and_habitat"],
+    "pictures": ["../../../assets/lakeSturgeon"]
   },
   {
-    "name": "Lamphrey",
-    "scientificName": "",
-    "description": "",
-    "habitat": "",
-    "diet": "",
-    "lifecycle": "",
-    "pictures": ["../../../assets/atlanticSalmon"]
+    "name": "Sea Lamprey",
+    "scientificName": "Petromyzon marinus",
+    "description": "The adult lamprey may be characterized by a toothed, funnel-like sucking mouth. The common name \"lamprey\" is probably derived from Latin lampetra, which may mean \"stone licker\" ",
+    "habitat": "Lampreys live mostly in coastal and fresh waters and are found in most temperate regions.",
+    "diet": "Sea lampreys prey on all types of fish, such as lake trout, salmon, rainbow trout (steel­head), brown trout, whitefish, yellow perch, burbot, walleye, catfish, and even sturgeon.",
+    "lifecycle": "The adults spawn in nests of sand, gravel and pebbles in clear streams, and after hatching from the eggs, young larvae—called ammocoetes—will drift downstream with the current till they reach soft and fine sediment in silt beds, where they will burrow in silt, mud and detritus, taking up an existence as filter feeders, collecting detritus, algae, and microorganisms. The eyes of the larvae are underdeveloped, but are capable of discriminating changes in illuminance. Ammocoetes can grow from 3–4 inches (8–10 centimetres) to about 8 inches (20 cm)",
+    "references": ["https://www.dfo-mpo.gc.ca/species-especes/publications/ais-eae/lamprey-lamproie/index-eng.html, https://en.wikipedia.org/wiki/Lamprey"],
+    "pictures": ["../../../assets/lamprey"]
   },
   {
     "name": "Largemouth Bass",
-    "scientificName": "",
-    "description": "",
-    "habitat": "",
-    "diet": "",
-    "lifecycle": "",
+    "scientificName": "Micropterus salmoides",
+    "description": "The largemouth bass is an olive-green to greenish gray carnivorous freshwater gamefish, marked by a series of dark, sometimes black, blotches forming a jagged horizontal stripe along each flank.",
+    "habitat": "Largemouth bass live mainly in lakes and rivers. The optimal habitat for this species include slow moving, quiet, clear waters with soft, shallow substrates. Dense vegetation is ideal for avoiding predation and being predators themselves. Although largemouth bass tend to stay in shallow water with a depth of 0.3-4 meters, they migrate during the winter to deeper water, 5-15 meters.",
+    "diet": "The juvenile largemouth bass consumes mostly small bait fish, scuds, water fleas,[14] copepods,[14] small shrimp, and insects. Adults consume smaller fish (bluegill, banded killifish, minnows), shad, worms, snails, crawfish (crayfish), frogs, snakes, salamanders, bats[15] and even small water birds, mammals, turtle hatchlings, and alligator hatchlings.[16] In larger lakes and reservoirs, adult bass occupy deeper water than younger fish, and shift to a diet consisting almost entirely of smaller fish like shad, yellow perch, ciscoes, suckers, shiners, other cyprinids,[14] freshwater silversides,[17] and sunfish (such as bluegill and green sunfish).[18] It also consumes younger members of larger fish species, such as catfish, trout, walleye, white bass, striped bass, and even smaller black bass",
+    "lifecycle": "Largemouth bass are polyandrous, which means one female mates with multiple males in a single breeding season. They reproduce once per year in January-March in the southern areas, and May-June in the northern parts.",
+    "references": ["https://en.wikipedia.org/wiki/Largemouth_bass, https://animaldiversity.org/accounts/Micropterus_salmoides/"],
     "pictures": ["../../../assets/atlanticSalmon"]
   },
   {
-    "name": "Muskie",
-    "scientificName": "",
-    "description": "",
-    "habitat": "",
-    "diet": "",
-    "lifecycle": "",
+    "name": "Muskellunge",
+    "scientificName": "Esox masquinongy",
+    "description": "\"Muskellunge are the largest member of the pike family \" Esocidae (Waszcuk, 1996), they resemble the northern pike in most respects, but are distinct in the following respects. The sides vary from greenish to brownish to silverish, usually with dark markings, but the marks may be absent. The white or cream-colored belly often has brownish or grayish spots. The dorsal and anal fins, which are set far back on the body, vary from greenish to brownish to blood red and usually have dark markings. The duckbill-shaped jaws have long, sharp teeth: the roof of the mouth has pads of shorter, recurved teeth. The cheek and gill cover have scales on the top half only. The underside of the jaw has sensory pores, numbers varying from 12 to 20, but the count is usually 15-18. (Sternberg, 1992)",
+    "habitat": "Muskellunge inhabit freshwater rivers and lakes and can survive in a wide range of water temperatures. Muskellunge prefer water in the 67-to 72-degree range and are hardly ever found in waters with a maximun temperature below 68 F. Muskellunge favor clear water and cannot adapt to water that stays turbid most of the time. They also have a well-defined home range. Several studies have shown that muskellunge seldom leave their home range, except to spawn, although they roam about within it. The larger the body of water the larger the home range. Although they prefer shallow, weedy water (less than 20 feet deep) during their early years of life, as they grow larger, they spend more time in deep water.",
+    "diet": "Muskellunge are the top predator in any body of water where they occur, and they will eat larger prey than most other freshwater fish. Adult muskellunge will eat fish from one-fourth to one-half of their own length and up to 20% of their own weight. Young muskellunge do not hesitate to attack other fish of nearly their own size, grabbing the prey by the head and swimming around with the tail sticking out of their mouth until they digest enough to swallow the rest of the unfortunate victim. Muskellunge fry (the young) start to feed on plankton shortly after hatching. As the fry reach about one inch in length, they begin to feed on tiny insects and at about 2 inches their diet consists mainly of small fish, even including their own kind. Muskellunge feed primarily on fish, insects, ducklings, frogs, muskrats, and mice. There have even been reports of large muskellunge attacking small dogs and even humans, although most of these reports are greatly exaggerated.",
+    "lifecycle": "Muskellunge are random spawners, not nest builders. They scatter their eggs in shallow water, most often over live or decaying aquatic plants or their roots. They spawn in the early spring, normally in water temperatures from 49 to 59 f. They often spawn in the same weedy bays of the main lake or on shallow flats in large bays, far from the shoreline, as in the Great Lakes and some other large lakes. Muskellunge have been known to drop their eggs in water as deep as 6 feet. Males move onto the spawning grounds a few days before the females. The spawning period lasts for 5 to 10 days. As the eggs and milt (sperm) are released, males thrash their tails wildly, apparently to help scatter the eggs. The violent activity commonly results in deep gashes and split fins, and the damage may kill the fish.",
+    "references": ["https://animaldiversity.org/accounts/Esox_masquinongy/"],
     "pictures": ["../../../assets/atlanticSalmon"]
   },
   {
     "name": "Northern Pike",
-    "scientificName": "",
-    "description": "",
-    "habitat": "",
-    "diet": "",
-    "lifecycle": "",
-    "pictures": ["../../../assets/atlanticSalmon"]
+    "scientificName": "Esox lucius",
+    "description": "Northern pike average 46 to 51 cm (18-20 inches) in length. They can be identified by their single dorsal fin and light-colored spots along their dark body. They are also recognized by scales that cover their entire cheek and the upper half of their gill covers.",
+    "habitat": "Esox lucius are found in almost every type of freshwater, from cold deep lakes, to warm shallow ponds, to muddy rivers. Having a broad range of tolerances for water temperature, clarity and oxygen content allows Esox lucius to be extremely adaptable to different conditions.",
+    "diet": "Esox lucius are a carnivorous fish. Equipped with sharp teeth and very complex skull and jaw structures they are predators of smaller fish, frogs, crayfish, small mammals and birds.",
+    "lifecycle": "Spawning occurs in the shallows when the water temperature reaches 4 to 7 degress Celsius (40-45 degrees Fahrenheit). When they are laid, the eggs are vulnerable to predators. The eggs that survive hatch in about 2 weeks. With their insatiable eating habits young E. lucius grow rapidly in both length and weight. Males become sexually mature at 2 to 3 years-old and females at 3 to 4 years-old.",
+    "references": ["https://animaldiversity.org/accounts/Esox_lucius/"],
+    "pictures": ["../../../assets/northernPike"]
   },
   {
     "name": "Rainbow Trout",
-    "scientificName": "",
-    "description": "",
-    "habitat": "",
-    "diet": "",
-    "lifecycle": "",
-    "pictures": ["../../../assets/atlanticSalmon"]
+    "scientificName": "Oncorhynchus mykiss",
+    "description": "Physical description varies widely with sex, age, and habitat. In general, they are streamlined, with 8 to 12 spines in the anal fin and lack teeth at the base of the tongue (unlike their close relatives, Oncorhynchus clarkii). The undersides tend to be silvery with a pinkish red stripe along the upper-middle part of the body, though this stripe can vary from dark to light. Resident rainbows and spawning steelhead tend to be lighter with more pronounced pink stripes, while ocean-going steelhead are darker and silvery to blend into their ocean environment.",
+    "habitat": "Freshwater, brackish, or marine waters of temperate zones. The anadromous form, called steelhead, spawn and complete their early development in freshwater mountain streams, then migrate to spend their adult life in the ocean. In freshwater, they prefer cool water but have been known to tolerate water temperatures up to 24°C (native climates have water temperatures around 12°C in the summer). Productive streams have a good mixture of riffles and pools and overhanging vegetation for shade. Most importantly, they require gravel beds to lay their eggs, and therefore, are sensitive to sedimentation and channel scouring. Juvenile trout prefer protective cover and low velocity water and have been known to be swept away and killed in water that is too fast.",
+    "diet": "Rainbow trout and steelhead are insectivorous and piscivorous. Resident rainbow trout tend to eat more fish than steelhead. Both species primarily feed on invertebrate larvae drifting in mid-water to conserve energy that would be expended if they were foraging for food in the substrate. Young rainbow trout and steelhead eat insect larvae, crustaceans, other aquatic invertebrates, and algae.",
+    "lifecycle": "Female fish find suitable nest sites while their male mate guards the site from other interested males and predators. The female digs the nest (called a redd) with her anal fin and then descends upon it to position her vent and anal fin into the deepest part of the redd. The male joins her in a parallel position so that their vents are opposite each other. The male and female open their mouths, arch their backs, and deposit the eggs and milt (fish sperm) at the same time. The eggs are enveloped in a cloud of milt and are fertilized. Only a few seconds elapse from the time the female drops into the redd and fertilization occurs. The female then covers the nest with gravel and repeats the process again a few times until she has deposited all of her eggs.",
+    "references": ["https://animaldiversity.org/accounts/Oncorhynchus_mykiss/"],
+    "pictures": ["../../../assets/rainbowTrout"]
   },
   {
     "name": "Rock Bass",
-    "scientificName": "",
-    "description": "",
-    "habitat": "",
-    "diet": "",
-    "lifecycle": "",
-    "pictures": ["../../../assets/atlanticSalmon"]
+    "scientificName": "Ambloplites rupestris",
+    "description": "Rock bass are part of genus Ambloplites, meaning “blunt shield,” and the species name rupestris refers to their preference for being “among the rocks.” Similar to other sunfish, rock bass can be distinguished by the five to seven spines located on the anal fin along with nine to eleven soft anal rays. Rock bass also have spines located on their much larger dorsal fin, with 10 to 13 spines and 11 to 13 soft dorsal rays. Rock bass have distinguishable dark spots on each scale that are aligned in rows around the lateral line, continuing down towards the ventral side. Starting with their back, rock bass are dark green or brownish, fading to a lighter green, and slowly fading to whitish green or yellow towards their ventral side. Their fins have a yellowish brown tint, with a black spot on the tip of the gill plate. They are relatively small, averaging about 20 to 25 cm long and very rarely reach one kilogram, although the largest recorded rock bass was 3 kg. Rock bass have large mouths and bright red eyes, which give them the nickname “redeyes.”",
+    "habitat": "Rock bass are found inhabiting aquatic biomes such as rivers, streams, lakes, and ponds. These aquatic biomes are freshwater, often heavily vegetated to provide cover from predators. These fish also thrive in biomes with temperatures ranging from 10 to 29 degrees Celsius. Rock bass are most commonly distributed in regions that supply a habitat of rocky or sandy characteristics in clear water.",
+    "diet": "Rock bass prey on various aquatic species such as plants located around their highly vegetated habitat. Rock bass also prey on small crustaceans like crayfish, insects such as small larvae, and smaller fish, including those of their own species.",
+    "lifecycle": "Rock bass are polygynandrous, in which both females and males have multiple mates during the breeding season. Rock bass spawn in the spring and, in some cases, spawn again in the early summer with another mate. When attracting a mate, male rock bass find a suitable area and build a nest. Circling inside the newly prepared nest, the male awaits a mate. Without courtship displays, the female enters the nest and joins the male in his circular behavior. Both the female and male simultaneously release their sperm and eggs into the nest. The female's role in spawning is over after they release eggs and they are able to leave the nest and mate with another male, although they sometimes choose to remain near the exterior of the nest. Male rock bass guard and protect the nest using circling behaviors until the fry hatch.",
+    "references": ["https://animaldiversity.org/accounts/Ambloplites_rupestris/"],
+    "pictures": ["../../../assets/rockBass"]
   },
   {
     "name": "Smallmouth Bass",
-    "scientificName": "",
-    "description": "",
-    "habitat": "",
-    "diet": "",
-    "lifecycle": "",
-    "pictures": ["../../../assets/atlanticSalmon"]
+    "scientificName": "Micropterus dolomieu",
+    "description": "Like all other species of the genus Micropterus, the smallmouth bass has a moderately compressed, elongate body. There are 3 spines in the anal fin, and 9-11 spines in the dorsal fin. Body is olive green above, yellow-white below, typically with 8-16 dark brown vertical bars on the side. The mouth is large, with the posterior edge of the maxilla extending to beneath the eye.",
+    "habitat": "Although its native distribution overlaps much of the northern range of Largemouth Bass, Smallmouth Bass typically is found in cooler rivers and lakes, with rocky or sandy substrates. As visual predators, smallmouth bass actively seek out clear waters. Increases in turbidity can cause displacement of many fish species, Smallmouth included. In lakes, smallmouth seek out structures, such as logs, rocky outcroppings, or pier posts. When present in stream ecosystems, they are typically found in areas with a relatively swift current.",
+    "diet": "Fry and juvenile diets consist primarily of zooplankton and insect larvae. Adults have a more diverse palate, subsisting on such varied foods as crayfish, amphibians, insects, and other fish. Adults also cannibalize young of other parents.",
+    "lifecycle": "Like other centrarchids, the male will excavate and guard a small, round nest. Suitability for nest-building is maximized between 1-2.5 m in depth, with particle size of substrate near 30 mm. Females lay upwards of 2,000 eggs at each spawning. After spawning is complete, the female is chased off, and will occasionally mate again with another male. The eggs hatch in 4-6 days, and the fry remain in the nest for approximately two weeks before dispersing.",
+    "references": ["https://animaldiversity.org/accounts/Micropterus_dolomieu/"],
+    "pictures": ["../../../assets/smallmouthBass"]
   },
   {
     "name": "Sunfish",
-    "scientificName": "",
-    "description": "",
-    "habitat": "",
-    "diet": "",
-    "lifecycle": "",
-    "pictures": ["../../../assets/atlanticSalmon"]
+    "scientificName": "Lepomis",
+    "description": "Lepomis is a genus of freshwater fish in the sunfish family, Centrarchidae, in the order Perciformes. Perhaps the most recognizable species of this genus is the bluegill.",
+    "habitat": "They are widely distributed throughout the lakes and rivers of the United States and Canada, and several species have been transplanted and flourished around the world. Many are sought by anglers as panfish, and large numbers are bred to stock lakes, rivers, and tributaries.",
+    "diet": "N/A",
+    "lifecycle": "N/A",
+    "references":["https://en.wikipedia.org/wiki/Lepomis"],
+    "pictures": ["../../../assets/sunfishes"]
   },
   {
     "name": "Walleye",
-    "scientificName": "",
-    "description": "",
-    "habitat": "",
-    "diet": "",
-    "lifecycle": "",
-    "pictures": ["../../../assets/atlanticSalmon"]
+    "scientificName": "Sander vitreus",
+    "description": "The name walleye refers to the glassy, large pupils of this fish; their white stare is a result of light reflected back through the pupil by crystalline matter in the retina. This allows the walleye to see extraordinarily well in darker waters. Walleyes are long and slim; brownish- green or silver above to creamy white below with dark stripes. The ventral lobe of the tail fin has a prominent white margin. Walleyes have large canine teeth. They have a large, visible, black spot at the base of the last three spines in the first of their two dorsal fins. They can reach 107 cm in length and can grow to 11 kg. Average weight is around 5 kg.",
+    "habitat": "Walleyes prefer deep lake and river water but will move into shallow flats to feed during early evening and night.",
+    "diet": "Walleye are strictly carnivorous. Young walleye eat plankton. As they get older, they mostly eat fishes such as yellow perch and freshwater drum. They also eat insects, crayfish, snails, and mudpuppies (a kind of salamander). They even eat small mammals when fish and insects are not available. Feeding occurs at night.",
+    "lifecycle": "In southern areas, walleye may live 10 to 12 years but in northern waters they may live to be more than 20 years old",
+    "references": ["https://animaldiversity.org/accounts/Sander_vitreus/"],
+    "pictures": ["../../../assets/walleye"]
   },
   {
     "name": "White Perch",
-    "scientificName": "",
-    "description": "",
-    "habitat": "",
-    "diet": "",
-    "lifecycle": "",
-    "pictures": ["../../../assets/atlanticSalmon"]
+    "scientificName": "Morone americana",
+    "description": "Species in the genus Morone are generally deep bodied fishes with complete lateral lines, ctenoid scales, and an opercular spine. Their jaws contain conical, villiform teeth which are set close together. The pelvic fin contains 1 spine and 5 rays, the caudal fin has 17 principal rays, and there are 7 branchiostegal rays, 3 anal spines, and 2 dorsal fins, one with 9 spines and the other with 1 spine and 10-14 soft rays. Morone americana has a silvery green-gray or dark color above with silver or brass sides and a white underside. During spawning the underside of the mandible may be a pink or blue to purplish color. Often the caudal and pelvic fins have a reddish colored base. The body is oblong and dorsoventrally compressed with a depressed head, and a pointed nose with an oblique terminal mouth and a projecting jaw. Teeth are small, pointed, and banded on the jaw. The dorsal fins are hardly connected and about equivalent in length. Morone americana differs from other members of the genus by the dorsal fin connection being so slight, by having no teeth on the base of the tongue and no lateral stripes, by and the anal spines being ungraduated.",
+    "habitat": "Morone americana inhabits mainly brackish water and estuaries such as the Chesapeake Bay. Members of the same genus (Morone) reside in large bodies of water such as lakes, reservoirs, estuaries, or bays among others.",
+    "diet": "White perch are primarily piscivorous, feeding on other fish such as those in the families Cyprinidae and Osmeridae. Other major components of the diet of M. americana are fish eggs and larvae, annelids, insects, some crustaceans, and detritus. Larval white perch feed off of zooplankton. As they grow, they tend to eat larger zooplankton and insects in spring, and as these populations wane their diet switches to larval fish, eggs, detritus, and crustaceans, and in some areas shrimp, squid, and crabs. Once white perch grow to 22 cm they eat almost nothing but other fish.",
+    "lifecycle": "Morone americana is polyandrous, without mate guarding or displays of dominance. A ripe female is merely enveloped by a group of males. The sperm and eggs are released at random into the environment, where the eggs stick to one another and to the substrate, and sperm from various males fertilize them.",
+    "references": ["https://animaldiversity.org/accounts/Morone_americana/"],
+    "pictures": ["../../../assets/whitePerch"]
   },
   {
     "name": "Yellow Perch",
-    "scientificName": "",
-    "description": "",
-    "habitat": "",
-    "diet": "",
-    "lifecycle": "",
-    "pictures": ["../../../assets/atlanticSalmon"]
+    "scientificName": "Perca flavescens",
+    "description": "Adult yellow perch are usually golden yellow; young are usually more whitish. There are 6 -- 8 dark vertical bars on the sides of these fish. Their eyes are green to yellow. They have a spiny dorsal fin with 12 -- 14 spines and a second dorsal fin with 12-13 soft rays plus 2-3 spines. There is usually a blackish blotch on the membrane between the last 3 or 4 dorsal spines. Their anal fin has 2 spines and 7-8 soft rays. The lower fins of adults are usually tinged yellow or red; this is especially noticeable on males during breeding season. The lateral line is prominent and curved with 51-61 scales along it. Yellow perch have rough feel because they have ctenoid scales",
+    "habitat": "Yellow perch are found mainly in lakes and sometimes in impoundments of larger rivers. Clear water is important as excessive turbidity and silt could lead to death of perch. Perch do however have a high tolerance for low oxygen conditions. They inhabit water of moderate temperature, avoiding cold deep water and warm surface waters during the summer. Young perch generally inhabit shallower water than larger ones, though as temperature increases all move to cooler, deeper water.",
+    "diet": "Young of the year yellow perch feed on zooplankton, then as they grow they switch to benthic macroinvertebrates and finally fish.",
+    "lifecycle": "Female yellow perch mature at ages two to four, males usually mature one year earlier. Spawning takes place in the spring (April through early May) when the water temperature reaches 45 - 52°F (Craig 1987; Herman 1959). The average number of eggs laid per female is 23,000. After deposition the eggs rapidly swell and harden. Eggs hatch in 8 -10 days and the emerging the fish are 4 - 7 mm in length.",
+    "references": ["https://animaldiversity.org/accounts/Perca_flavescens/"],
+    "pictures": ["../../../assets/yellowPerch"]
   }
 ]

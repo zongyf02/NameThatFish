@@ -9,8 +9,8 @@ import { store, persistor } from './src/redux/store';
 
 export default function App() {
   const routes = [
-    { name: ' ', component: UploadOrCamera },
     { name: 'Home', component: Home },
+    { name: ' ', component: UploadOrCamera },
   ];
 
   return (

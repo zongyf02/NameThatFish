@@ -5,10 +5,21 @@ import json
 import logging
 from functools import wraps
 
+
+import tensorflow as tf
+from keras.preprocessing.image import ImageDataGenerator
+
+
 from fish import app
 from backend.database.orm.models import User, Picture
 from backend.database.orm.session_context import SessionContext
-from backend.model.fish_identifier import model
+from backend.model.fish_identifier import make_model
+
+
+model = make_model(n_classes=20)
+latest = tf.train.latest_checkpoint('./model/trained_weights')
+model.load_weights(latest)
+
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
@@ -50,6 +61,7 @@ def get_user(user_id):
                     status=200,
                     content_type='applications/json')
 
+
 @app.route("/user/create", methods=["POST"])
 @exception_handler
 def create_user():
@@ -75,6 +87,7 @@ def update_user(user_id):
     else:
       raise('Query must be provided in the request body')
 
+
 @app.route("/user/delete/<user_id>", methods=["POST"])
 @exception_handler
 def delete_user(user_id):
@@ -83,7 +96,12 @@ def delete_user(user_id):
     logger.info('Successfully deleted the user')
     return Response(status=200)
 
+
 @app.route("/predict", methods=["POST"])
+@exception_handler
 def predict():
   if request.method == 'POST':
+    file = request.files['fish']
+    prediction = model.predict(file)
+    print(prediction)
     return "predicting fish..."

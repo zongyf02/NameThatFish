@@ -1,6 +1,8 @@
-import { AntDesign, Entypo } from '@expo/vector-icons';
+import { Entypo } from '@expo/vector-icons';
+import { memo } from 'react';
 import {
   Image,
+  Linking,
   Platform,
   ScrollView,
   StyleSheet,
@@ -10,36 +12,18 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 
-const Header = () => {
-  return (
-    <View
-      style={{
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        paddingHorizontal: 12,
-        paddingVertical: 12,
-      }}
-    >
-      <TouchableOpacity>
-        <AntDesign name="left" size={24} color="#686868" />
-      </TouchableOpacity>
-      <TouchableOpacity>
-        <Entypo name="dots-three-vertical" size={24} color="#686868" />
-      </TouchableOpacity>
-    </View>
-  );
-};
+import fishData from './fish.json';
 
-const Result = () => {
+const FishInformation = ({ fish }) => {
   const otherPictures = [{ id: 1 }, { id: 2 }, { id: 3 }];
 
   return (
     <SafeAreaView style={styles.container}>
-      <Header />
       <ScrollView showsVerticalScrollIndicator={false} style={{ paddingHorizontal: 16 }}>
-        <Text style={styles.name}>Fighting Fish</Text>
-        <Text style={styles.scientificName}>Betta splendens</Text>
+        <Text style={styles.name}>{fish.name}</Text>
+        <Text style={styles.scientificName}>{fish.scientificName}</Text>
 
         <View style={styles.imageContainer}>
           <View style={styles.otherImageContainer}>
@@ -64,25 +48,60 @@ const Result = () => {
         </View>
 
         <Text style={styles.subTitle}>Overview</Text>
-        <Text style={styles.description}>
-          Qui amet proident ad pariatur eu velit non cillum sint ea deserunt ad. Quis ipsum occaecat
-          dolor non proident aliquip ipsum nisi irure consequat ad adipisicing excepteur ex. Dolore
-          enim esse elit labore pariatur voluptate ut. Nisi magna esse dolor aliquip velit do
-          voluptate enim qui et. Aliquip dolor ex nostrud exercitation mollit laboris pariatur amet
-          laboris quis enim occaecat deserunt velit. Pariatur sit veniam sit ad nostrud duis
-          proident quis eiusmod incididunt veniam adipisicing cillum. Voluptate cupidatat anim culpa
-          deserunt ea eu duis labore. Do irure id occaecat nisi eiusmod culpa laboris ad mollit
-          nulla. Aliquip occaecat nulla in consectetur Lorem id ullamco. Fugiat veniam officia
-          pariatur voluptate. Minim laborum ea duis fugiat ex velit do.
-        </Text>
+        <Text style={styles.description}>{fish.description}</Text>
 
-        <Text style={styles.subTitle}>Need to know</Text>
+        <Text style={styles.subTitle}>Habitat</Text>
+        <Text style={styles.description}>{fish.habitat}</Text>
+
+        <Text style={styles.subTitle}>Diet</Text>
+        <Text style={styles.description}>{fish.diet}</Text>
+
+        <Text style={styles.subTitle}>Life Cycle</Text>
+        <Text style={styles.description}>{fish.lifecycle}</Text>
+
+        <Text style={styles.subTitle}>Reference</Text>
+        {fish.references.map((reference) => (
+          <Text
+            key={reference}
+            style={styles.description}
+            onPress={() => Linking.openURL(reference)}
+          >
+            {reference}
+          </Text>
+        ))}
       </ScrollView>
     </SafeAreaView>
   );
 };
 
-// TouchableHighlight, Button, Alert, ImageBackground, TouchableOpacity, Modal
+const Drawer = createDrawerNavigator();
+
+const Result = () => {
+  return (
+    <Drawer.Navigator
+      initialRouteName={fishData[0].name}
+      screenOptions={({ navigation }) => ({
+        drawerPosition: 'right',
+        headerLeft: false,
+        headerRight: () => (
+          <TouchableOpacity onPress={() => navigation.openDrawer()}>
+            <Entypo style={{marginRight: 12}} name="list" size={24} color="#686868" />
+          </TouchableOpacity>
+        ),
+      })}
+    >
+      {fishData.map((fish) => (
+        <Drawer.Screen
+          key={fish.name}
+          name={fish.name}
+          component={memo(() => (
+            <FishInformation fish={fish} />
+          ))}
+        />
+      ))}
+    </Drawer.Navigator>
+  );
+};
 
 const styles = StyleSheet.create({
   container: {
