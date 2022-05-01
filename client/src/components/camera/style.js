@@ -51,7 +51,7 @@ export default StyleSheet.create({
     right: 0,
     top: 0,
     marginRight: 12,
-    marginTop: 15,
+    marginTop: 20,
     fontWeight: 'bold',
     fontFamily: 'sans-serif',
   },
@@ -61,7 +61,7 @@ export default StyleSheet.create({
     left: 0,
     top: 0,
     marginLeft: 12,
-    marginTop: 15,
+    marginTop: 20,
   },
   label: {
     fontWeight: '900',
@@ -70,7 +70,8 @@ export default StyleSheet.create({
   },
   labelBtnContainer: {
     position: 'absolute',
-    height: 50,
+    top: 30,
+    height: 60,
     width: '100%',
     opacity: 0.5,
     backgroundColor: 'black',
