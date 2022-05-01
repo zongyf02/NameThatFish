@@ -116,7 +116,7 @@ def predict():
     image = np.expand_dims(image, axis=0)
 
     prediction = model.predict(image)[0]
-    min_idx = np.argmax(prediction)
-    predicted_fish = fish[min_idx]
+    man_idx = np.argmax(prediction)
+    predicted_fish = fish[man_idx]
 
     return predicted_fish
