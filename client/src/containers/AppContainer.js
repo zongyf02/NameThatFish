@@ -15,17 +15,17 @@ const UploadCameraView = () => {
       iconSize: 30,
     },
     {
-      name: 'Library',
-      component: Library,
-      iconId: 'fishbowl',
-      IconComponent: MaterialCommunityIcons,
-      iconSize: 30,
-    },
-    {
       name: 'Camera',
       component: Camera,
       iconId: 'camera',
       IconComponent: Entypo,
+      iconSize: 30,
+    },
+    {
+      name: 'Library',
+      component: Library,
+      iconId: 'fishbowl',
+      IconComponent: MaterialCommunityIcons,
       iconSize: 30,
     },
   ];

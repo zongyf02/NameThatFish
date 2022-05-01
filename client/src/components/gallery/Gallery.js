@@ -7,9 +7,11 @@ import {
   View,
   Text,
   Dimensions,
+  SafeAreaView,
   StyleSheet,
   TouchableOpacity,
   Platform,
+  StatusBar,
   FlatList,
 } from 'react-native';
 import Carousel, { ParallaxImage } from 'react-native-snap-carousel';
@@ -82,13 +84,14 @@ const Gallery = () => {
   };
 
   return (
-    <View style={{ flex: 1, paddingTop: 20 }}>
+    <SafeAreaView style={styles.container}>
       <View
         style={{
           flexDirection: 'row',
-          borderColor: 'red',
-          borderRadius: 3,
           alignItems: 'center',
+          justifyContent: 'space-between',
+          marginHorizontal: 20,
+          marginVertical: 16,
         }}
       >
         <Text style={styles.galleryTitle}>NameThatFish</Text>
@@ -96,7 +99,7 @@ const Gallery = () => {
           <Ionicons name={galleryIcon} size={28} style={styles.galleryIcon} />
         </TouchableOpacity>
       </View>
-      <View style={styles.container}>
+      <View style={{ flex: 1 }}>
         {isListView ? (
           <FlatList
             vertical
@@ -120,7 +123,7 @@ const Gallery = () => {
           />
         )}
       </View>
-    </View>
+    </SafeAreaView>
   );
 };
 
@@ -129,8 +132,7 @@ export default Gallery;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: screenWidth / 7,
-    marginBottom: 5,
+    paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
   },
   item: {
     width: screenWidth - 125,
@@ -159,14 +161,9 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#00a4e6',
     opacity: 0.7,
-    marginTop: 30,
-    marginLeft: 20,
   },
   galleryIcon: {
     color: 'black',
     opacity: 0.5,
-    flex: 1,
-    marginTop: 40,
-    marginLeft: screenWidth / 5,
   },
 });
