@@ -11,6 +11,7 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'black',
+    paddingTop: 10,
   },
   buttonContainer: {
     flex: 1,
@@ -22,7 +23,7 @@ export default StyleSheet.create({
   flipCamera: {
     position: 'absolute',
     left: 3,
-    top: 3,
+    top: 8,
   },
   capture: {
     backgroundColor: '#f5f6f5',
@@ -30,15 +31,14 @@ export default StyleSheet.create({
     width: 60,
     borderRadius: 30,
     position: 'absolute',
-    top: height * 0.6,
+    top: height * 0.65,
   },
   previewContiner: {
     backgroundColor: 'transparent',
     flex: 1,
-    width: '100%',
-    height: '100%',
     padding: 0,
     zIndex: 2,
+    marginTop: 5,
   },
   previewImgBg: {
     flex: 1,
