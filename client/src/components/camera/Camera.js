@@ -2,12 +2,14 @@
 import { useEffect, useState, useRef } from 'react';
 import { useIsFocused } from '@react-navigation/native';
 import { MaterialIcons } from '@expo/vector-icons';
+
 import style from './style';
 
 // Components
 import { View, TouchableOpacity, TouchableHighlight, Dimensions, Platform } from 'react-native';
 import { Camera } from 'expo-camera';
 import CameraPreview from './CameraPreview';
+import { StatusBar } from 'expo-status-bar';
 
 // Flux
 import { useDispatch, useSelector } from 'react-redux';
@@ -140,6 +142,7 @@ const CameraPage = ({ navigation }) => {
       {mode === 'preview' && (
         <CameraPreview navigation={navigation} photo={photo} resetCamera={resetCamera} />
       )}
+      <StatusBar style="light" />
     </View>
   );
 };

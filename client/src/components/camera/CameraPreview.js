@@ -21,7 +21,7 @@ const CameraPreview = ({ navigation, photo, resetCamera }) => {
   // dispatchers
   const dispatch = useDispatch();
   const savePhoto = () => {
-    navigation.navigate('Gallery');
+    navigation.navigate('Home');
     dispatch({ type: imagesTypes.ADD_PHOTOS_REQUESTED, photo: previewImg.uri });
   };
 

@@ -1,10 +1,22 @@
 import _ from 'lodash';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import style from './style';
-import { Entypo } from '@expo/vector-icons';
-import { View, Text } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 
 const Tab = createBottomTabNavigator();
+
+const CustomTabBarButton = ({ children, onPress }) => {
+  <TouchableOpacity
+    style={{
+      top: -30,
+      justifyContent: 'center',
+      alignItems: 'center',
+    }}
+    onPress={onPress}
+  >
+    <View>{children}</View>
+  </TouchableOpacity>;
+};
 
 const BottomTab = ({ screens }) => {
   const renderScreen = (screen) => (
@@ -13,10 +25,9 @@ const BottomTab = ({ screens }) => {
       name={screen.name}
       component={screen.component}
       options={{
-        tabBarLabel: screen.name,
         tabBarIcon: ({ focused }) => (
           <View style={style.iconContainer}>
-            <Entypo
+            <screen.IconComponent
               name={screen.iconId}
               size={screen.iconSize}
               color={focused ? '#00a4e6' : '#748c94'}

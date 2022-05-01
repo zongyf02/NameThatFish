@@ -5,7 +5,8 @@ import imagesService from '../../services/images';
 export function* addPhotoToPhotos(action) {
   try {
     const photo = action.photo ? action.photo : yield call(imagesService.pickImageAsync);
-    yield put({ type: imagesTypes.ADD_PHOTOS_SUCCESS, photo: photo });
+    if (!photo) throw { message: 'add photo request cancelled' };
+    else yield put({ type: imagesTypes.ADD_PHOTOS_SUCCESS, photo: photo });
   } catch (e) {
     yield put({ type: imagesTypes.ADD_PHOTOS_FAILED, message: e.message });
   }

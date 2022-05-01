@@ -11,6 +11,7 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'black',
+    paddingTop: 10,
   },
   buttonContainer: {
     flex: 1,
@@ -22,7 +23,7 @@ export default StyleSheet.create({
   flipCamera: {
     position: 'absolute',
     left: 3,
-    top: 3,
+    top: 8,
   },
   capture: {
     backgroundColor: '#f5f6f5',
@@ -30,15 +31,14 @@ export default StyleSheet.create({
     width: 60,
     borderRadius: 30,
     position: 'absolute',
-    top: height * 0.6,
+    top: height * 0.65,
   },
   previewContiner: {
     backgroundColor: 'transparent',
     flex: 1,
-    width: '100%',
-    height: '100%',
     padding: 0,
     zIndex: 2,
+    marginTop: 5,
   },
   previewImgBg: {
     flex: 1,
@@ -51,7 +51,7 @@ export default StyleSheet.create({
     right: 0,
     top: 0,
     marginRight: 12,
-    marginTop: 15,
+    marginTop: 20,
     fontWeight: 'bold',
     fontFamily: 'sans-serif',
   },
@@ -61,7 +61,7 @@ export default StyleSheet.create({
     left: 0,
     top: 0,
     marginLeft: 12,
-    marginTop: 15,
+    marginTop: 20,
   },
   label: {
     fontWeight: '900',
@@ -70,7 +70,8 @@ export default StyleSheet.create({
   },
   labelBtnContainer: {
     position: 'absolute',
-    height: 50,
+    top: 30,
+    height: 60,
     width: '100%',
     opacity: 0.5,
     backgroundColor: 'black',
