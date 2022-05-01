@@ -1,14 +1,15 @@
 from flask import request
 from flask.wrappers import Response
 
+import io
 import json
 import logging
 from functools import wraps
 
-
+from keras.preprocessing.image import img_to_array
+import numpy as np
+from PIL import Image
 import tensorflow as tf
-from keras.preprocessing.image import ImageDataGenerator
-
 
 from fish import app
 from backend.database.orm.models import User, Picture
@@ -27,6 +28,9 @@ ch = logging.StreamHandler()
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 ch.setFormatter(formatter)
 logger.addHandler(ch)
+
+
+fish = ['Atlamtic salmon', 'Bluegill', 'Brook trout', 'Channel catfish', 'Chinook salmon', 'Crappie', 'Flathead catfish', 'Lake sturgeon', 'Lamphrey', 'Largemouth bass', 'Muskie', 'Northern Pike', 'Not Recognized', 'Rainbow trout', 'Rock Bass', 'Smallmouth bass', 'Sunfish', 'Walleye', 'White perch', 'Yellow perch']
 
 
 def exception_handler(func):
@@ -101,7 +105,18 @@ def delete_user(user_id):
 @exception_handler
 def predict():
   if request.method == 'POST':
-    file = request.files['fish']
-    prediction = model.predict(file)
-    print(prediction)
-    return "predicting fish..."
+    image = request.files['fish'].read()
+    image = Image.open(io.BytesIO(image))
+    
+    if image.mode != 'RGB':
+      image = image.convert('RGB')
+
+    image = image.resize((512, 512))
+    image = img_to_array(image)
+    image = np.expand_dims(image, axis=0)
+
+    prediction = model.predict(image)[0]
+    min_idx = np.argmax(prediction)
+    predicted_fish = fish[min_idx]
+
+    return predicted_fish
