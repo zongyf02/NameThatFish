@@ -6,7 +6,14 @@ import { MaterialIcons } from '@expo/vector-icons';
 import style from './style';
 
 // Components
-import { View, TouchableOpacity, TouchableHighlight, Dimensions, Platform } from 'react-native';
+import {
+  View,
+  TouchableOpacity,
+  TouchableHighlight,
+  Dimensions,
+  SafeAreaView,
+  Platform,
+} from 'react-native';
 import { Camera } from 'expo-camera';
 import CameraPreview from './CameraPreview';
 import { StatusBar } from 'expo-status-bar';
@@ -115,7 +122,7 @@ const CameraPage = ({ navigation }) => {
   };
 
   return (
-    <View style={style.container}>
+    <SafeAreaView style={style.container}>
       {mode === 'camera' && isFocused && cameraStatus === 'granted' && (
         <Camera
           style={[style.camera, { marginBottom: imagePadding }]}
@@ -143,7 +150,7 @@ const CameraPage = ({ navigation }) => {
         <CameraPreview navigation={navigation} photo={photo} resetCamera={resetCamera} />
       )}
       <StatusBar style="light" />
-    </View>
+    </SafeAreaView>
   );
 };
 
