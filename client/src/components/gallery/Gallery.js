@@ -99,7 +99,7 @@ const Gallery = () => {
           <Ionicons name={galleryIcon} size={28} style={styles.galleryIcon} />
         </TouchableOpacity>
       </View>
-      <View style={{ flex: 1 }}>
+      <View style={{ flex: 1, justifyContent: 'center' }}>
         {isListView ? (
           <FlatList
             vertical
@@ -110,17 +110,19 @@ const Gallery = () => {
             keyExtractor={(item) => `${item.id}`}
           />
         ) : (
-          <Carousel
-            ref={carouselRef}
-            sliderWidth={screenWidth}
-            sliderHeight={screenWidth}
-            itemWidth={screenWidth - 120}
-            data={photos}
-            renderItem={renderItem}
-            hasParallaxImages={true}
-            loop={true}
-            enableMomentum={true}
-          />
+          <View>
+            <Carousel
+              ref={carouselRef}
+              sliderWidth={screenWidth}
+              sliderHeight={screenWidth}
+              itemWidth={screenWidth - 120}
+              data={photos}
+              renderItem={renderItem}
+              hasParallaxImages={true}
+              loop={true}
+              enableMomentum={true}
+            />
+          </View>
         )}
       </View>
     </SafeAreaView>

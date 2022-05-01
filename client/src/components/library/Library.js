@@ -14,13 +14,18 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import fishData from './fish.json';
 import styles from './style';
 
-const FishInformation = ({ fish }) => {
+const FishInformation = ({ fish, navigation }) => {
   const otherPictures = [{ id: 1 }, { id: 2 }, { id: 3 }];
 
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView showsVerticalScrollIndicator={false} style={{ paddingHorizontal: 16 }}>
-        <Text style={styles.name}>{fish.name}</Text>
+        <View style={styles.header}>
+          <Text style={styles.name}>{fish.name}</Text>
+          <TouchableOpacity onPress={() => navigation.openDrawer()}>
+            <Entypo name="list" size={28} color="#686868" />
+          </TouchableOpacity>
+        </View>
         <Text style={styles.scientificName}>{fish.scientificName}</Text>
 
         <View style={styles.imageContainer}>
@@ -78,22 +83,17 @@ const Library = () => {
   return (
     <Drawer.Navigator
       initialRouteName={fishData[0].name}
-      screenOptions={({ navigation }) => ({
+      screenOptions={{
         drawerPosition: 'right',
-        headerLeft: false,
-        headerRight: () => (
-          <TouchableOpacity onPress={() => navigation.openDrawer()}>
-            <Entypo style={{ paddingRight: 12 }} name="list" size={24} color="#686868" />
-          </TouchableOpacity>
-        ),
-      })}
+        headerShown: false,
+      }}
     >
       {fishData.map((fish) => (
         <Drawer.Screen
           key={fish.name}
           name={fish.name}
-          component={memo(() => (
-            <FishInformation fish={fish} />
+          component={memo((props) => (
+            <FishInformation fish={fish} {...props} />
           ))}
         />
       ))}

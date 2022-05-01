@@ -6,6 +6,11 @@ export default StyleSheet.create({
     paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
     backgroundColor: '#FFFFFF',
   },
+  header: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
   description: {
     color: '#52647A',
     fontSize: 16,
