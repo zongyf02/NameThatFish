@@ -23,7 +23,6 @@
     "@react-navigation/native": "^6.0.10",
     "@react-navigation/stack": "^6.2.1",
     "@unimodules/core": "~7.2.0",
-    "axios": "^0.27.2",
     "d3-shape": "^3.1.0",
     "expo": "^44.0.6",
     "expo-camera": "^12.1.2",
