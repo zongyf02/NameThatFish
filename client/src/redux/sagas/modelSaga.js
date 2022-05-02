@@ -6,7 +6,7 @@ export function* requestResultFromModel(action) {
   try {
     const result = yield call(modelService.requestModelResultAsync, { photo: action.photo });
     if (result.error) throw { message: result.error };
-    yield put({ type: modelTypes.GET_RESULT_SUCCESS, prediction: result, id: action.id });
+    yield put({ type: modelTypes.GET_RESULT_SUCCESS, result: result, id: action.id });
   } catch (e) {
     yield put({ type: modelTypes.GET_RESULT_FAILED, message: e.message });
   }

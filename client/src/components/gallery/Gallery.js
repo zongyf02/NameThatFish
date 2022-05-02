@@ -25,7 +25,7 @@ import * as modelSelectors from '../../redux/reducers/model/reducer';
 
 const { width: screenWidth } = Dimensions.get('window');
 
-const Gallery = ({ navigation }) => {
+const Gallery = () => {
   // state
   const [isListView, setListView] = useState(false);
   const carouselRef = useRef(null);
@@ -45,26 +45,25 @@ const Gallery = ({ navigation }) => {
 
   // if result is cached use result, otherwise fetch from api
   const getResult = (item) => {
-    const name = 'Not Recognized';
-    if (name == 'Not Recognized') {
-      Alert.alert(
-        'Not recognized',
-        'There is no fish that matches with your image. Please try agin with a different image.',
-        { text: 'Close' }
-      );
-    } else {
-      navigation.navigate('Library', { name: 'Brook Trout' });
+    if (!result) {
+      dispatch({ type: modelTypes.GET_RESULT_REQUESTED, photo: item.photo, id: item.id });
     }
-    // if (!result) {
-    //   dispatch({ type: modelTypes.GET_RESULT_REQUESTED, photo: item.photo, id: item.id });
-    // }
   };
 
-  // useEffect(() => {
-  //   if (result) {
-  //     navigation.navigate(result);
-  //   }
-  // }, [result]);
+  useEffect(() => {
+    if (result) {
+      const name = result.result.prediction;
+      if (name == 'Not Recognized') {
+        Alert.alert(
+          'Not recognized',
+          'There is no fish that matches with your image. Please try agin with a different image.',
+          { text: 'Close' }
+        );
+      } else {
+        navigation.navigate('Library', { name });
+      }
+    }
+  }, [result]);
 
   const onPressPhoto = (item) => {
     // adds more images to gallery
