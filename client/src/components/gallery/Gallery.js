@@ -44,7 +44,7 @@ const Gallery = ({ navigation }) => {
 
   useEffect(() => {
     if (result) {
-      navigation.navigate('Library');
+      navigation.navigate(result);
     }
   }, [result]);
 
@@ -102,16 +102,18 @@ const Gallery = ({ navigation }) => {
         }}
       >
         <Text style={styles.galleryTitle}>NameThatFish</Text>
-        <TouchableOpacity onPress={clearPhotos}>
-          <FontAwesome name="remove" size={26} style={styles.galleryIcon} />
-        </TouchableOpacity>
-        <TouchableOpacity onPress={switchGalleryView}>
-          {isListView ? (
-            <MaterialIcons name="view-carousel" size={32} style={styles.galleryIcon} />
-          ) : (
-            <AntDesign name="appstore1" size={28} style={styles.galleryIcon} />
-          )}
-        </TouchableOpacity>
+        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+          <TouchableOpacity onPress={clearPhotos} style={{ marginRight: 12 }}>
+            <FontAwesome name="remove" size={26} style={styles.galleryIcon} />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={switchGalleryView}>
+            {isListView ? (
+              <MaterialIcons name="view-carousel" size={32} style={styles.galleryIcon} />
+            ) : (
+              <AntDesign name="appstore1" size={28} style={styles.galleryIcon} />
+            )}
+          </TouchableOpacity>
+        </View>
       </View>
       <View style={{ flex: 1, justifyContent: 'center' }}>
         {isListView ? (

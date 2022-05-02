@@ -30,7 +30,7 @@ ch.setFormatter(formatter)
 logger.addHandler(ch)
 
 
-fish = ['Atlamtic salmon', 'Bluegill', 'Brook trout', 'Channel catfish', 'Chinook salmon', 'Crappie', 'Flathead catfish', 'Lake sturgeon', 'Lamphrey', 'Largemouth bass', 'Muskie', 'Northern Pike', 'Not Recognized', 'Rainbow trout', 'Rock Bass', 'Smallmouth bass', 'Sunfish', 'Walleye', 'White perch', 'Yellow perch']
+fish = ['Atlamtic Salmon', 'Bluegill', 'Brook Trout', 'Channel Catfish', 'Chinook Salmon', 'Crappie', 'Flathead Catfish', 'Lake Sturgeon', 'Lamphrey', 'Largemouth Bass', 'Muskie', 'Northern Pike', 'Not Recognized', 'Rainbow Trout', 'Rock Bass', 'Smallmouth Bass', 'Sunfish', 'Walleye', 'White Perch', 'Yellow Perch']
 
 
 def exception_handler(func):
@@ -119,4 +119,7 @@ def predict():
     man_idx = np.argmax(prediction)
     predicted_fish = fish[man_idx]
 
-    return predicted_fish
+    return Response(json.dumps({'prediction': predicted_fish}),
+                    status=200,
+                    content_type='applications/json')
+

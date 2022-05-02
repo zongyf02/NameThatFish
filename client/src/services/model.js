@@ -1,10 +1,13 @@
 class ModelService {
-  requestModelResultAsync = async (action) => {
+  requestModelResultAsync = (action) => {
     let formData = new FormData();
-    formData.append('fish', action.photo);
+    formData.append('fish', {
+      uri: action.photo,
+      name: 'fish',
+    });
 
     // will have to modify to fit env, currently assuming localhost
-    return await fetch('http://localhost:8080/predict', {
+    return fetch('http://10.0.0.50:8080/predict', {
       method: 'POST',
       body: formData,
     })
