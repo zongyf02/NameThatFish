@@ -62,7 +62,9 @@
     "habitat": "Black crappie prefer cooler, deeper, clearer waters with more abundant aquatic vegetation than do white crappie. This includes still backwater lakes, sloughs, creeks, streams, lakes, and ponds. White crappie occur in creek backwaters, slow-flowing streams, sand- and mud-bottomed pools, small to large rivers, and lakes and ponds.",
     "diet": "Both species of crappie as adults feed predominantly on smaller fish species, including the young of their own predators (which include the northern pike, muskellunge, and walleye). They have diverse diets, however, including zooplankton, insects, and crustaceans.",
     "lifecycle": "This species is known to live at least 15 years. During the first four years of life, young black crappies grow quickly in the warm waters of the southern US while growth is slower in cooler northern U.S. waters. Black crappies reach maturity at 2-4 years of age (black crappie).",
-    "references": ["https://crappiefisher.com/what-does-a-crappie-fish-look-like/, https://en.wikipedia.org/wiki/Crappie"],
+    "references": [
+      "https://crappiefisher.com/what-does-a-crappie-fish-look-like/, https://en.wikipedia.org/wiki/Crappie"
+    ],
     "pictures": ["../../../assets/crappie"]
   },
   {
@@ -82,7 +84,7 @@
     "habitat": "These sturgeon often migrate in search of food or suitable spawning locations, or in response to seasonal environmental conditions. Juveniles typically inhabit pools greater than about 6 feet in depth, and adults typically live deep in large lakes. They are not often far from suitable spawning locations. The abundance of prey also plays a large factor in finding a suitable habitat. Can be found in the Great Lakes.",
     "diet": "Its diet consists of insect larvae, worms (including leeches), and other small organisms (primarily metazoan) it finds in the mud. Fish are rarely found in its diet and are likely incidental items only, with the possible exception of the invasive round goby.[9] Given that it is a large species surviving by feeding on very small species, its feeding ecology has been compared to that of large marine animals, like some whales, which survive by filter-feeding.",
     "lifecycle": "Lake sturgeon have a very long lifespan. Males typically live for 55 years and females can live for 80 to 150 years. They grow quickly during a lengthy juvenile stage",
-    "references":[ "https://en.wikipedia.org/wiki/Lake_sturgeon#Distribution_and_habitat"],
+    "references": ["https://en.wikipedia.org/wiki/Lake_sturgeon#Distribution_and_habitat"],
     "pictures": ["../../../assets/lakeSturgeon"]
   },
   {
@@ -92,7 +94,9 @@
     "habitat": "Lampreys live mostly in coastal and fresh waters and are found in most temperate regions.",
     "diet": "Sea lampreys prey on all types of fish, such as lake trout, salmon, rainbow trout (steel­head), brown trout, whitefish, yellow perch, burbot, walleye, catfish, and even sturgeon.",
     "lifecycle": "The adults spawn in nests of sand, gravel and pebbles in clear streams, and after hatching from the eggs, young larvae—called ammocoetes—will drift downstream with the current till they reach soft and fine sediment in silt beds, where they will burrow in silt, mud and detritus, taking up an existence as filter feeders, collecting detritus, algae, and microorganisms. The eyes of the larvae are underdeveloped, but are capable of discriminating changes in illuminance. Ammocoetes can grow from 3–4 inches (8–10 centimetres) to about 8 inches (20 cm)",
-    "references": ["https://www.dfo-mpo.gc.ca/species-especes/publications/ais-eae/lamprey-lamproie/index-eng.html, https://en.wikipedia.org/wiki/Lamprey"],
+    "references": [
+      "https://www.dfo-mpo.gc.ca/species-especes/publications/ais-eae/lamprey-lamproie/index-eng.html, https://en.wikipedia.org/wiki/Lamprey"
+    ],
     "pictures": ["../../../assets/lamprey"]
   },
   {
@@ -102,7 +106,9 @@
     "habitat": "Largemouth bass live mainly in lakes and rivers. The optimal habitat for this species include slow moving, quiet, clear waters with soft, shallow substrates. Dense vegetation is ideal for avoiding predation and being predators themselves. Although largemouth bass tend to stay in shallow water with a depth of 0.3-4 meters, they migrate during the winter to deeper water, 5-15 meters.",
     "diet": "The juvenile largemouth bass consumes mostly small bait fish, scuds, water fleas,[14] copepods,[14] small shrimp, and insects. Adults consume smaller fish (bluegill, banded killifish, minnows), shad, worms, snails, crawfish (crayfish), frogs, snakes, salamanders, bats[15] and even small water birds, mammals, turtle hatchlings, and alligator hatchlings.[16] In larger lakes and reservoirs, adult bass occupy deeper water than younger fish, and shift to a diet consisting almost entirely of smaller fish like shad, yellow perch, ciscoes, suckers, shiners, other cyprinids,[14] freshwater silversides,[17] and sunfish (such as bluegill and green sunfish).[18] It also consumes younger members of larger fish species, such as catfish, trout, walleye, white bass, striped bass, and even smaller black bass",
     "lifecycle": "Largemouth bass are polyandrous, which means one female mates with multiple males in a single breeding season. They reproduce once per year in January-March in the southern areas, and May-June in the northern parts.",
-    "references": ["https://en.wikipedia.org/wiki/Largemouth_bass, https://animaldiversity.org/accounts/Micropterus_salmoides/"],
+    "references": [
+      "https://en.wikipedia.org/wiki/Largemouth_bass, https://animaldiversity.org/accounts/Micropterus_salmoides/"
+    ],
     "pictures": ["../../../assets/atlanticSalmon"]
   },
   {
@@ -162,7 +168,7 @@
     "habitat": "They are widely distributed throughout the lakes and rivers of the United States and Canada, and several species have been transplanted and flourished around the world. Many are sought by anglers as panfish, and large numbers are bred to stock lakes, rivers, and tributaries.",
     "diet": "N/A",
     "lifecycle": "N/A",
-    "references":["https://en.wikipedia.org/wiki/Lepomis"],
+    "references": ["https://en.wikipedia.org/wiki/Lepomis"],
     "pictures": ["../../../assets/sunfishes"]
   },
   {

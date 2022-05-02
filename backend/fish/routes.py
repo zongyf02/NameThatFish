@@ -30,7 +30,7 @@ ch.setFormatter(formatter)
 logger.addHandler(ch)
 
 
-fish = ['Atlamtic Salmon', 'Bluegill', 'Brook Trout', 'Channel Catfish', 'Chinook Salmon', 'Crappie', 'Flathead Catfish', 'Lake Sturgeon', 'Lamphrey', 'Largemouth Bass', 'Muskie', 'Northern Pike', 'Not Recognized', 'Rainbow Trout', 'Rock Bass', 'Smallmouth Bass', 'Sunfish', 'Walleye', 'White Perch', 'Yellow Perch']
+fish = ['Atlamtic Salmon', 'Bluegill', 'Brook Trout', 'Channel Catfish', 'Chinook Salmon', 'Crappie', 'Flathead Catfish', 'Lake Sturgeon', 'Sea Lamphrey', 'Largemouth Bass', 'Muskellunge', 'Northern Pike', 'Not Recognized', 'Rainbow Trout', 'Rock Bass', 'Smallmouth Bass', 'Sunfish', 'Walleye', 'White Perch', 'Yellow Perch']
 
 
 def exception_handler(func):

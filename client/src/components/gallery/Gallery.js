@@ -25,7 +25,7 @@ import * as modelSelectors from '../../redux/reducers/model/reducer';
 
 const { width: screenWidth } = Dimensions.get('window');
 
-const Gallery = () => {
+const Gallery = ({ navigation }) => {
   // state
   const [isListView, setListView] = useState(false);
   const carouselRef = useRef(null);
@@ -52,17 +52,15 @@ const Gallery = () => {
 
   useEffect(() => {
     if (result) {
-      const name = result?.result?.prediction;
-      if (name) {
-        if (name == 'Not Recognized') {
-          Alert.alert(
-            'Not recognized',
-            'There is no fish that matches with your image. Please try agin with a different image.',
-            { text: 'Close' }
-          );
-        } else {
-          navigation.navigate('Library', { name });
-        }
+      const name = result.result.prediction;
+      if (name == 'Not Recognized') {
+        Alert.alert(
+          'Not recognized',
+          'There is no fish that matches with your image. Please try agin with a different image.',
+          { text: 'OK' }
+        );
+      } else {
+        navigation.navigate('Library', { name });
       }
     }
   }, [result]);
@@ -134,10 +132,12 @@ const Gallery = () => {
           </TouchableOpacity>
         </View>
       </View>
-      <View style={styles.infoContainer}>
-        <Feather name="info" size={20} color="white" />
-        <Text style={styles.infoText}>Press the image long to upload or predict an image.</Text>
-      </View>
+      {!isListView && (
+        <View style={styles.infoContainer}>
+          <Feather name="info" size={20} color="white" />
+          <Text style={styles.infoText}>Press the image long to upload or predict an image.</Text>
+        </View>
+      )}
       <View style={{ flex: 1, justifyContent: 'center' }}>
         {isListView ? (
           <FlatList
