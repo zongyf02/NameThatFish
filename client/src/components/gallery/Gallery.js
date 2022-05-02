@@ -17,7 +17,7 @@ import * as modelSelectors from '../../redux/reducers/model/reducer';
 
 const { width: screenWidth } = Dimensions.get('window');
 
-const Gallery = ({ navigation }) => {
+const Gallery = () => {
   // state
   const [isListView, setListView] = useState(false);
   const carouselRef = useRef(null);
@@ -44,7 +44,8 @@ const Gallery = ({ navigation }) => {
 
   useEffect(() => {
     if (result) {
-      navigation.navigate(result);
+      // navigate
+      console.log(result);
     }
   }, [result]);
 

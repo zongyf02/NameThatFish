@@ -5,6 +5,7 @@ import * as modelTypes from './actionTypes';
 const initialState = {
   results: [],
   id: null,
+  modelErrMsg: '',
 };
 
 // reducer
@@ -24,6 +25,7 @@ export default function reducer(state = initialState, action = {}) {
     case modelTypes.GET_RESULT_FAILED:
       return {
         ...state,
+        modelErrMsg: action.message,
       };
     default:
       return state;
@@ -32,5 +34,5 @@ export default function reducer(state = initialState, action = {}) {
 
 // selectors
 export const getResults = (state) => {
-  return state.model.results.filter((result) => result.id == state.id).result;
+  return state.model.results.find((result) => result.id == state.model.id);
 };
