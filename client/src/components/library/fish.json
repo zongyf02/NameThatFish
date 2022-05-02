@@ -6,8 +6,7 @@
     "habitat": "The natural breeding grounds of Atlantic salmon are rivers in Europe and the northeastern coast of North America. In Europe, Atlantic salmon are still found as far south as Spain, and as far north as Russia. Because of sport-fishing, some of the species' southern populations in northern Spain are growing smaller. The species distribution is easily influenced by changes in freshwater habitat and climate. Atlantic salmon are a cold-water fish species and are particularly sensitive to changes in water temperature.",
     "diet": "Young salmon begin a feeding response within a few days. After the yolk sac is absorbed by the body, they begin to hunt. Juveniles start with tiny invertebrates, but as they mature, they may occasionally eat small fish. During this time, they hunt both in the substrate and in the current. Some have been known to eat salmon eggs. The most commonly eaten foods include caddisflies, blackflies, mayflies, and stoneflies. As adults, the salmon prefer capelin as their meal of choice. Capelin are elongated silvery fish that grow up to 20–25 centimetres (8–10 in) long.",
     "lifecycle": "Most Atlantic salmon follow an anadromous migration pattern, in that they undergo their greatest feeding and growth in saltwater; however, adults return to spawn in native freshwater streams where the eggs hatch and juveniles grow through several distinct stages. Atlantic salmon do not require saltwater. Numerous examples of fully freshwater (i.e., 'landlocked') populations of the species exist throughout the Northern Hemisphere, including a now extinct population in Lake Ontario, which have been shown in recent studies to have spent their entire life cycle in watershed of the lake. In North America, the landlocked strains are frequently known as ouananiche.",
-    "references": ["https://en.wikipedia.org/wiki/Atlantic_salmon"],
-    "pictures": ["../../../assets/atlanticSalmon"]
+    "references": ["https://en.wikipedia.org/wiki/Atlantic_salmon"]
   },
   {
     "name": "Bluegill",
@@ -16,8 +15,7 @@
     "habitat": "Bluegills are very tolerant of many habitat types including pools of creeks and rivers, swamps, oxbow lakes, ponds, vegetated shores of impoundments, man-made lakes, ponds and retention basins. They prefer sluggish or slow-moving water.",
     "diet": "Bluegills are opportunistic carnivores feeding on a variety of prey types. They will feed on mature and immature insects, small invertebrates, crayfish, mollusks (mussels) and other fishes. They have small mouths; however, the larger the bluegill the larger the prey type they can consume. They mostly feed near the surface.",
     "lifecycle": "Spawning season for bluegills starts late in May and extends into August. The peak of the spawning season usually occurs in June in waters of 67 to 80 °F (19 to 27 °C). The male bluegills arrive first at the mating site. They will make a spawning bed of six to 12 inches in diameter in shallow water, clustering as many as 50 beds together. The males scoop out these beds in gravel or sand. Males tend to be very protective and chase everything away from their nests, especially other male bluegills. Some bluegills, regardless of their small size, will even attack snorkelers if they approach the edge of the nest. As a female approaches, the male will begin circling and making grunting noises. The motion and sound of the males seem to attract the females. Females are very choosy and will usually pick males with larger bodies and 'ears', making larger size a desirable trait for males to have. If the female enters the nest, both the male and female will circle each other, with the male expressing very aggressive behavior toward the female. If the female stays, the pair will enter the nest and come to rest in the middle. With the male in an upright posture, the pair will touch bellies, quiver, and spawn. These actions are repeated at irregular intervals several times in a row. Once the spawning is done, the male will chase the female out of the nest and guard the eggs. The fertilization process is entirely external. The male's sperm combines with the female's eggs in the water. Smaller males will often hide in nearby weeds and dart into the nest as they attempt to fertilize the eggs. They then quickly dart away. The size of the female plays a large role in how many eggs will be produced. A small female can produce as few as 1,000 eggs, and a large, healthy female can produce up to 100,000 eggs. The male continues to watch over the nest until the larvae are able to hatch and swim away on their own. The bluegill generally begins its spawning career at one year of age, but has been found to spawn as early as four months of age under favorable conditions. Anglers find spawning season to be a very successful time to fish for bluegills, as they aggressively attack anything, including a hook, that comes near. The growth of the bluegill is very rapid in the first three years, but slows considerably once the fish reaches maturity. Many fish reach five to eight years old, and in extreme cases, can live 11 years.",
-    "references": ["https://en.wikipedia.org/wiki/Bluegill"],
-    "pictures": ["../../../assets/Bluegill"]
+    "references": ["https://en.wikipedia.org/wiki/Bluegill"]
   },
   {
     "name": "Brook Trout",
@@ -26,8 +24,7 @@
     "habitat": "The brook trout inhabits large and small lakes, rivers, streams, creeks, and spring ponds. They prefer clear waters of high purity and a narrow pH range and are sensitive to poor oxygenation, pollution, and changes in pH caused by environmental effects such as acid rain. The typical pH range of brook trout waters is 5.0 to 7.5, with pH extremes of 3.5 to 9.8 possible. Water temperatures typically range from 34 to 72 °F (1 to 22 °C). Warm summer temperatures and low flow rates are stressful on brook trout populations—especially larger fish.",
     "diet": "Brook trout have a diverse diet that includes larval, pupal, and adult forms of aquatic insects (typically caddisflies, stoneflies, mayflies, and aquatic dipterans), and adult forms of terrestrial insects (typically ants, beetles, grasshoppers, and crickets) that fall into the water, crustaceans, frogs and other amphibians, molluscs, smaller fish, invertebrates, and even small aquatic mammals such as voles.",
     "lifecycle": "The female constructs a depression in a location in the stream bed, sometimes referred to as a 'redd', where groundwater percolates upward through the gravel. One or more males approach the female, fertilizing the eggs as the female expresses them. Most spawnings involve peripheral males, which directly influences the number of eggs that survive into adulthood. In general, the larger the number of peripheral males present, the more likely the eggs will be cannibalized. The eggs are slightly denser than water. The female then buries the eggs in a small gravel mound; they hatch in 95 to 100 days.",
-    "references": ["https://en.wikipedia.org/wiki/Brook_trout"],
-    "pictures": ["../../../assets/BrookTrout"]
+    "references": ["https://en.wikipedia.org/wiki/Brook_trout"]
   },
   {
     "name": "Channel Catfish",
@@ -40,8 +37,7 @@
       "https://animals.net/channel-catfish/",
       "https://www.ontariofishes.ca/home.htm",
       "https://en.wikipedia.org/wiki/Channel_catfish"
-    ],
-    "pictures": ["../../../assets/channelCatfish"]
+    ]
   },
   {
     "name": "Chinook Salmon",
@@ -52,8 +48,7 @@
     "lifecycle": "Chinook may spend one to eight years in the ocean (averaging from three to four years)[18] before returning to their home rivers to spawn. The salmon undergo radical morphological changes as they prepare for the spawning event ahead. Salmon lose the silvery blue they had as ocean fish, and their color darkens, sometimes with a radical change in hue. Salmon are sexually dimorphic, and the male salmon develop canine-like teeth and their jaws develop a pronounced curve or hook, called a \"kype\"",
     "references": [
       "https://www.fisheries.noaa.gov/species/chinook-salmon, https://www.nwf.org/Educational-Resources/Wildlife-Guide/Fish/Chinook-Salmon, https://en.wikipedia.org/wiki/Chinook_salmon#Description"
-    ],
-    "pictures": ["../../../assets/chinookSalmon"]
+    ]
   },
   {
     "name": "Crappie",
@@ -64,8 +59,7 @@
     "lifecycle": "This species is known to live at least 15 years. During the first four years of life, young black crappies grow quickly in the warm waters of the southern US while growth is slower in cooler northern U.S. waters. Black crappies reach maturity at 2-4 years of age (black crappie).",
     "references": [
       "https://crappiefisher.com/what-does-a-crappie-fish-look-like/, https://en.wikipedia.org/wiki/Crappie"
-    ],
-    "pictures": ["../../../assets/crappie"]
+    ]
   },
   {
     "name": "Flathead Catfish",
@@ -74,8 +68,7 @@
     "habitat": "Ranging from the lower Great Lakes region to northern Mexico, it has been widely introduced and is an invasive species in some areas.",
     "diet": "The flathead catfish prefers live prey. It is a voracious carnivore and feeds primarily on fishes, insects, annelid worms, and crustaceans. It also feeds on other small catfish and almost anything that moves and makes vibration.",
     "lifecycle": "Spawning of P. olivaris occurs in late June and early July, and the nests are made in areas with submerged logs and other debris. The males, which also build the nests, fiercely and tirelessly defend and fan the clutch. The size of the clutch varies proportionately to the size of the female; an average of 2,640 eggs per kilogram of fish are laid.",
-    "references": ["https://en.wikipedia.org/wiki/Flathead_catfish#Distribution_and_habitat"],
-    "pictures": ["../../../assets/flatheadCatfish"]
+    "references": ["https://en.wikipedia.org/wiki/Flathead_catfish#Distribution_and_habitat"]
   },
   {
     "name": "Lake Sturgeon",
@@ -84,8 +77,7 @@
     "habitat": "These sturgeon often migrate in search of food or suitable spawning locations, or in response to seasonal environmental conditions. Juveniles typically inhabit pools greater than about 6 feet in depth, and adults typically live deep in large lakes. They are not often far from suitable spawning locations. The abundance of prey also plays a large factor in finding a suitable habitat. Can be found in the Great Lakes.",
     "diet": "Its diet consists of insect larvae, worms (including leeches), and other small organisms (primarily metazoan) it finds in the mud. Fish are rarely found in its diet and are likely incidental items only, with the possible exception of the invasive round goby.[9] Given that it is a large species surviving by feeding on very small species, its feeding ecology has been compared to that of large marine animals, like some whales, which survive by filter-feeding.",
     "lifecycle": "Lake sturgeon have a very long lifespan. Males typically live for 55 years and females can live for 80 to 150 years. They grow quickly during a lengthy juvenile stage",
-    "references": ["https://en.wikipedia.org/wiki/Lake_sturgeon#Distribution_and_habitat"],
-    "pictures": ["../../../assets/lakeSturgeon"]
+    "references": ["https://en.wikipedia.org/wiki/Lake_sturgeon#Distribution_and_habitat"]
   },
   {
     "name": "Sea Lamprey",
@@ -96,8 +88,7 @@
     "lifecycle": "The adults spawn in nests of sand, gravel and pebbles in clear streams, and after hatching from the eggs, young larvae—called ammocoetes—will drift downstream with the current till they reach soft and fine sediment in silt beds, where they will burrow in silt, mud and detritus, taking up an existence as filter feeders, collecting detritus, algae, and microorganisms. The eyes of the larvae are underdeveloped, but are capable of discriminating changes in illuminance. Ammocoetes can grow from 3–4 inches (8–10 centimetres) to about 8 inches (20 cm)",
     "references": [
       "https://www.dfo-mpo.gc.ca/species-especes/publications/ais-eae/lamprey-lamproie/index-eng.html, https://en.wikipedia.org/wiki/Lamprey"
-    ],
-    "pictures": ["../../../assets/lamprey"]
+    ]
   },
   {
     "name": "Largemouth Bass",
@@ -108,8 +99,7 @@
     "lifecycle": "Largemouth bass are polyandrous, which means one female mates with multiple males in a single breeding season. They reproduce once per year in January-March in the southern areas, and May-June in the northern parts.",
     "references": [
       "https://en.wikipedia.org/wiki/Largemouth_bass, https://animaldiversity.org/accounts/Micropterus_salmoides/"
-    ],
-    "pictures": ["../../../assets/atlanticSalmon"]
+    ]
   },
   {
     "name": "Muskellunge",
@@ -118,8 +108,7 @@
     "habitat": "Muskellunge inhabit freshwater rivers and lakes and can survive in a wide range of water temperatures. Muskellunge prefer water in the 67-to 72-degree range and are hardly ever found in waters with a maximun temperature below 68 F. Muskellunge favor clear water and cannot adapt to water that stays turbid most of the time. They also have a well-defined home range. Several studies have shown that muskellunge seldom leave their home range, except to spawn, although they roam about within it. The larger the body of water the larger the home range. Although they prefer shallow, weedy water (less than 20 feet deep) during their early years of life, as they grow larger, they spend more time in deep water.",
     "diet": "Muskellunge are the top predator in any body of water where they occur, and they will eat larger prey than most other freshwater fish. Adult muskellunge will eat fish from one-fourth to one-half of their own length and up to 20% of their own weight. Young muskellunge do not hesitate to attack other fish of nearly their own size, grabbing the prey by the head and swimming around with the tail sticking out of their mouth until they digest enough to swallow the rest of the unfortunate victim. Muskellunge fry (the young) start to feed on plankton shortly after hatching. As the fry reach about one inch in length, they begin to feed on tiny insects and at about 2 inches their diet consists mainly of small fish, even including their own kind. Muskellunge feed primarily on fish, insects, ducklings, frogs, muskrats, and mice. There have even been reports of large muskellunge attacking small dogs and even humans, although most of these reports are greatly exaggerated.",
     "lifecycle": "Muskellunge are random spawners, not nest builders. They scatter their eggs in shallow water, most often over live or decaying aquatic plants or their roots. They spawn in the early spring, normally in water temperatures from 49 to 59 f. They often spawn in the same weedy bays of the main lake or on shallow flats in large bays, far from the shoreline, as in the Great Lakes and some other large lakes. Muskellunge have been known to drop their eggs in water as deep as 6 feet. Males move onto the spawning grounds a few days before the females. The spawning period lasts for 5 to 10 days. As the eggs and milt (sperm) are released, males thrash their tails wildly, apparently to help scatter the eggs. The violent activity commonly results in deep gashes and split fins, and the damage may kill the fish.",
-    "references": ["https://animaldiversity.org/accounts/Esox_masquinongy/"],
-    "pictures": ["../../../assets/atlanticSalmon"]
+    "references": ["https://animaldiversity.org/accounts/Esox_masquinongy/"]
   },
   {
     "name": "Northern Pike",
@@ -128,8 +117,7 @@
     "habitat": "Esox lucius are found in almost every type of freshwater, from cold deep lakes, to warm shallow ponds, to muddy rivers. Having a broad range of tolerances for water temperature, clarity and oxygen content allows Esox lucius to be extremely adaptable to different conditions.",
     "diet": "Esox lucius are a carnivorous fish. Equipped with sharp teeth and very complex skull and jaw structures they are predators of smaller fish, frogs, crayfish, small mammals and birds.",
     "lifecycle": "Spawning occurs in the shallows when the water temperature reaches 4 to 7 degress Celsius (40-45 degrees Fahrenheit). When they are laid, the eggs are vulnerable to predators. The eggs that survive hatch in about 2 weeks. With their insatiable eating habits young E. lucius grow rapidly in both length and weight. Males become sexually mature at 2 to 3 years-old and females at 3 to 4 years-old.",
-    "references": ["https://animaldiversity.org/accounts/Esox_lucius/"],
-    "pictures": ["../../../assets/northernPike"]
+    "references": ["https://animaldiversity.org/accounts/Esox_lucius/"]
   },
   {
     "name": "Rainbow Trout",
@@ -138,8 +126,7 @@
     "habitat": "Freshwater, brackish, or marine waters of temperate zones. The anadromous form, called steelhead, spawn and complete their early development in freshwater mountain streams, then migrate to spend their adult life in the ocean. In freshwater, they prefer cool water but have been known to tolerate water temperatures up to 24°C (native climates have water temperatures around 12°C in the summer). Productive streams have a good mixture of riffles and pools and overhanging vegetation for shade. Most importantly, they require gravel beds to lay their eggs, and therefore, are sensitive to sedimentation and channel scouring. Juvenile trout prefer protective cover and low velocity water and have been known to be swept away and killed in water that is too fast.",
     "diet": "Rainbow trout and steelhead are insectivorous and piscivorous. Resident rainbow trout tend to eat more fish than steelhead. Both species primarily feed on invertebrate larvae drifting in mid-water to conserve energy that would be expended if they were foraging for food in the substrate. Young rainbow trout and steelhead eat insect larvae, crustaceans, other aquatic invertebrates, and algae.",
     "lifecycle": "Female fish find suitable nest sites while their male mate guards the site from other interested males and predators. The female digs the nest (called a redd) with her anal fin and then descends upon it to position her vent and anal fin into the deepest part of the redd. The male joins her in a parallel position so that their vents are opposite each other. The male and female open their mouths, arch their backs, and deposit the eggs and milt (fish sperm) at the same time. The eggs are enveloped in a cloud of milt and are fertilized. Only a few seconds elapse from the time the female drops into the redd and fertilization occurs. The female then covers the nest with gravel and repeats the process again a few times until she has deposited all of her eggs.",
-    "references": ["https://animaldiversity.org/accounts/Oncorhynchus_mykiss/"],
-    "pictures": ["../../../assets/rainbowTrout"]
+    "references": ["https://animaldiversity.org/accounts/Oncorhynchus_mykiss/"]
   },
   {
     "name": "Rock Bass",
@@ -148,8 +135,7 @@
     "habitat": "Rock bass are found inhabiting aquatic biomes such as rivers, streams, lakes, and ponds. These aquatic biomes are freshwater, often heavily vegetated to provide cover from predators. These fish also thrive in biomes with temperatures ranging from 10 to 29 degrees Celsius. Rock bass are most commonly distributed in regions that supply a habitat of rocky or sandy characteristics in clear water.",
     "diet": "Rock bass prey on various aquatic species such as plants located around their highly vegetated habitat. Rock bass also prey on small crustaceans like crayfish, insects such as small larvae, and smaller fish, including those of their own species.",
     "lifecycle": "Rock bass are polygynandrous, in which both females and males have multiple mates during the breeding season. Rock bass spawn in the spring and, in some cases, spawn again in the early summer with another mate. When attracting a mate, male rock bass find a suitable area and build a nest. Circling inside the newly prepared nest, the male awaits a mate. Without courtship displays, the female enters the nest and joins the male in his circular behavior. Both the female and male simultaneously release their sperm and eggs into the nest. The female's role in spawning is over after they release eggs and they are able to leave the nest and mate with another male, although they sometimes choose to remain near the exterior of the nest. Male rock bass guard and protect the nest using circling behaviors until the fry hatch.",
-    "references": ["https://animaldiversity.org/accounts/Ambloplites_rupestris/"],
-    "pictures": ["../../../assets/rockBass"]
+    "references": ["https://animaldiversity.org/accounts/Ambloplites_rupestris/"]
   },
   {
     "name": "Smallmouth Bass",
@@ -158,8 +144,7 @@
     "habitat": "Although its native distribution overlaps much of the northern range of Largemouth Bass, Smallmouth Bass typically is found in cooler rivers and lakes, with rocky or sandy substrates. As visual predators, smallmouth bass actively seek out clear waters. Increases in turbidity can cause displacement of many fish species, Smallmouth included. In lakes, smallmouth seek out structures, such as logs, rocky outcroppings, or pier posts. When present in stream ecosystems, they are typically found in areas with a relatively swift current.",
     "diet": "Fry and juvenile diets consist primarily of zooplankton and insect larvae. Adults have a more diverse palate, subsisting on such varied foods as crayfish, amphibians, insects, and other fish. Adults also cannibalize young of other parents.",
     "lifecycle": "Like other centrarchids, the male will excavate and guard a small, round nest. Suitability for nest-building is maximized between 1-2.5 m in depth, with particle size of substrate near 30 mm. Females lay upwards of 2,000 eggs at each spawning. After spawning is complete, the female is chased off, and will occasionally mate again with another male. The eggs hatch in 4-6 days, and the fry remain in the nest for approximately two weeks before dispersing.",
-    "references": ["https://animaldiversity.org/accounts/Micropterus_dolomieu/"],
-    "pictures": ["../../../assets/smallmouthBass"]
+    "references": ["https://animaldiversity.org/accounts/Micropterus_dolomieu/"]
   },
   {
     "name": "Sunfish",
@@ -168,8 +153,7 @@
     "habitat": "They are widely distributed throughout the lakes and rivers of the United States and Canada, and several species have been transplanted and flourished around the world. Many are sought by anglers as panfish, and large numbers are bred to stock lakes, rivers, and tributaries.",
     "diet": "N/A",
     "lifecycle": "N/A",
-    "references": ["https://en.wikipedia.org/wiki/Lepomis"],
-    "pictures": ["../../../assets/sunfishes"]
+    "references": ["https://en.wikipedia.org/wiki/Lepomis"]
   },
   {
     "name": "Walleye",
@@ -178,8 +162,7 @@
     "habitat": "Walleyes prefer deep lake and river water but will move into shallow flats to feed during early evening and night.",
     "diet": "Walleye are strictly carnivorous. Young walleye eat plankton. As they get older, they mostly eat fishes such as yellow perch and freshwater drum. They also eat insects, crayfish, snails, and mudpuppies (a kind of salamander). They even eat small mammals when fish and insects are not available. Feeding occurs at night.",
     "lifecycle": "In southern areas, walleye may live 10 to 12 years but in northern waters they may live to be more than 20 years old",
-    "references": ["https://animaldiversity.org/accounts/Sander_vitreus/"],
-    "pictures": ["../../../assets/walleye"]
+    "references": ["https://animaldiversity.org/accounts/Sander_vitreus/"]
   },
   {
     "name": "White Perch",
@@ -188,8 +171,7 @@
     "habitat": "Morone americana inhabits mainly brackish water and estuaries such as the Chesapeake Bay. Members of the same genus (Morone) reside in large bodies of water such as lakes, reservoirs, estuaries, or bays among others.",
     "diet": "White perch are primarily piscivorous, feeding on other fish such as those in the families Cyprinidae and Osmeridae. Other major components of the diet of M. americana are fish eggs and larvae, annelids, insects, some crustaceans, and detritus. Larval white perch feed off of zooplankton. As they grow, they tend to eat larger zooplankton and insects in spring, and as these populations wane their diet switches to larval fish, eggs, detritus, and crustaceans, and in some areas shrimp, squid, and crabs. Once white perch grow to 22 cm they eat almost nothing but other fish.",
     "lifecycle": "Morone americana is polyandrous, without mate guarding or displays of dominance. A ripe female is merely enveloped by a group of males. The sperm and eggs are released at random into the environment, where the eggs stick to one another and to the substrate, and sperm from various males fertilize them.",
-    "references": ["https://animaldiversity.org/accounts/Morone_americana/"],
-    "pictures": ["../../../assets/whitePerch"]
+    "references": ["https://animaldiversity.org/accounts/Morone_americana/"]
   },
   {
     "name": "Yellow Perch",
@@ -198,7 +180,6 @@
     "habitat": "Yellow perch are found mainly in lakes and sometimes in impoundments of larger rivers. Clear water is important as excessive turbidity and silt could lead to death of perch. Perch do however have a high tolerance for low oxygen conditions. They inhabit water of moderate temperature, avoiding cold deep water and warm surface waters during the summer. Young perch generally inhabit shallower water than larger ones, though as temperature increases all move to cooler, deeper water.",
     "diet": "Young of the year yellow perch feed on zooplankton, then as they grow they switch to benthic macroinvertebrates and finally fish.",
     "lifecycle": "Female yellow perch mature at ages two to four, males usually mature one year earlier. Spawning takes place in the spring (April through early May) when the water temperature reaches 45 - 52°F (Craig 1987; Herman 1959). The average number of eggs laid per female is 23,000. After deposition the eggs rapidly swell and harden. Eggs hatch in 8 -10 days and the emerging the fish are 4 - 7 mm in length.",
-    "references": ["https://animaldiversity.org/accounts/Perca_flavescens/"],
-    "pictures": ["../../../assets/yellowPerch"]
+    "references": ["https://animaldiversity.org/accounts/Perca_flavescens/"]
   }
 ]

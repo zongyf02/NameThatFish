@@ -57,7 +57,7 @@ const Gallery = ({ navigation }) => {
         Alert.alert(
           'Not recognized',
           'There is no fish that matches with your image. Please try agin with a different image.',
-          { text: 'OK' }
+          [{ text: 'OK' }]
         );
       } else {
         navigation.navigate('Library', { name });

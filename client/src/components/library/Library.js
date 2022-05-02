@@ -1,5 +1,5 @@
 import { Entypo } from '@expo/vector-icons';
-import { memo } from 'react';
+import { memo, useState, useEffect } from 'react';
 import {
   Image,
   Linking,
@@ -15,7 +15,25 @@ import fishData from './fish.json';
 import styles from './style';
 
 const FishInformation = ({ fish, navigation }) => {
-  const otherPictures = [{ id: 1 }, { id: 2 }, { id: 3 }];
+  const [images, setImages] = useState({
+    large: null,
+    small: { small1: null, small2: null, small3: null },
+  });
+
+  useEffect(() => {
+    const importImages = async () => {
+      const large = await import(`../../../assets/images/Bluegill/large.png`);
+      const small1 = await import(`../../../assets/images/Bluegill/small1.jpg`);
+      const small2 = await import(`../../../assets/images/Bluegill/small2.jpg`);
+      const small3 = await import(`../../../assets/images/Bluegill/small3.jpg`);
+      setImages({
+        large: large.default,
+        small: { small1: small1.default, small2: small2.default, small3: small3.default },
+      });
+    };
+
+    importImages();
+  }, []);
 
   return (
     <SafeAreaView style={styles.container}>
@@ -30,23 +48,21 @@ const FishInformation = ({ fish, navigation }) => {
 
         <View style={styles.imageContainer}>
           <View style={styles.otherImageContainer}>
-            {otherPictures.map((otherPicture) => {
-              return (
-                <Image
-                  key={otherPicture.id}
-                  fadeDuration={1000}
-                  style={styles.otherImage}
-                  resizeMode="contain"
-                  source={require('../../../assets/fish.png')}
-                />
-              );
-            })}
+            {Object.entries(images.small).map(([size, image]) => (
+              <Image
+                key={size}
+                fadeDuration={1000}
+                style={styles.otherImage}
+                resizeMode="stretch"
+                source={image}
+              />
+            ))}
           </View>
           <Image
             fadeDuration={1000}
             style={styles.image}
             resizeMode="contain"
-            source={require('../../../assets/fish.png')}
+            source={images.large}
           />
         </View>
 
