@@ -52,15 +52,17 @@ const Gallery = () => {
 
   useEffect(() => {
     if (result) {
-      const name = result.result.prediction;
-      if (name == 'Not Recognized') {
-        Alert.alert(
-          'Not recognized',
-          'There is no fish that matches with your image. Please try agin with a different image.',
-          { text: 'Close' }
-        );
-      } else {
-        navigation.navigate('Library', { name });
+      const name = result?.result?.prediction;
+      if (name) {
+        if (name == 'Not Recognized') {
+          Alert.alert(
+            'Not recognized',
+            'There is no fish that matches with your image. Please try agin with a different image.',
+            { text: 'Close' }
+          );
+        } else {
+          navigation.navigate('Library', { name });
+        }
       }
     }
   }, [result]);
