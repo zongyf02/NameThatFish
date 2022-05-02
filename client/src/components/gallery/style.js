@@ -26,7 +26,9 @@ export default StyleSheet.create({
   },
   infoText: {
     color: '#FFFFFF',
-    marginLeft: 4,
+    marginLeft: 6,
+    flexWrap: 'wrap',
+    width: '90%',
   },
   image: {
     ...StyleSheet.absoluteFillObject,

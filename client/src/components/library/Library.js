@@ -80,10 +80,9 @@ const FishInformation = ({ fish, navigation }) => {
 const Drawer = createDrawerNavigator();
 
 const Library = ({ route, navigation }) => {
-  const { name } = route.params;
   return (
     <Drawer.Navigator
-      initialRouteName={name || fishData[0].name}
+      initialRouteName={route?.params?.name || fishData[0].name}
       screenOptions={{
         drawerPosition: 'right',
         headerShown: false,
