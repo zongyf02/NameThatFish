@@ -3,9 +3,17 @@ import styles from './style';
 import React, { useEffect, useRef, useState } from 'react';
 
 // Components
-import { View, Text, Dimensions, SafeAreaView, TouchableOpacity, FlatList } from 'react-native';
+import {
+  View,
+  Text,
+  Dimensions,
+  SafeAreaView,
+  TouchableOpacity,
+  FlatList,
+  Alert,
+} from 'react-native';
 import Carousel, { ParallaxImage } from 'react-native-snap-carousel';
-import { AntDesign, MaterialIcons, FontAwesome } from '@expo/vector-icons';
+import { AntDesign, Feather, FontAwesome, MaterialIcons } from '@expo/vector-icons';
 import { Card } from '../card';
 
 // Flux
@@ -37,16 +45,26 @@ const Gallery = ({ navigation }) => {
 
   // if result is cached use result, otherwise fetch from api
   const getResult = (item) => {
-    if (!result) {
-      dispatch({ type: modelTypes.GET_RESULT_REQUESTED, photo: item.photo, id: item.id });
+    const name = 'Not Recognized';
+    if (name == 'Not Recognized') {
+      Alert.alert(
+        'Not recognized',
+        'There is no fish that matches with your image. Please try agin with a different image.',
+        { text: 'Close' }
+      );
+    } else {
+      navigation.navigate('Library', { name: 'Brook Trout' });
     }
+    // if (!result) {
+    //   dispatch({ type: modelTypes.GET_RESULT_REQUESTED, photo: item.photo, id: item.id });
+    // }
   };
 
-  useEffect(() => {
-    if (result) {
-      navigation.navigate(result);
-    }
-  }, [result]);
+  // useEffect(() => {
+  //   if (result) {
+  //     navigation.navigate(result);
+  //   }
+  // }, [result]);
 
   const onPressPhoto = (item) => {
     // adds more images to gallery
@@ -114,6 +132,10 @@ const Gallery = ({ navigation }) => {
             )}
           </TouchableOpacity>
         </View>
+      </View>
+      <View style={styles.infoContainer}>
+        <Feather name="info" size={20} color="white" />
+        <Text style={styles.infoText}>Press the image long to upload or predict an image.</Text>
       </View>
       <View style={{ flex: 1, justifyContent: 'center' }}>
         {isListView ? (

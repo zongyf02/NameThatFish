@@ -17,6 +17,17 @@ export default StyleSheet.create({
     backgroundColor: 'white',
     borderRadius: 15,
   },
+  infoContainer: {
+    backgroundColor: '#00a4e675',
+    padding: 8,
+    marginHorizontal: 20,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  infoText: {
+    color: '#FFFFFF',
+    marginLeft: 4,
+  },
   image: {
     ...StyleSheet.absoluteFillObject,
     resizeMode: 'contain',
