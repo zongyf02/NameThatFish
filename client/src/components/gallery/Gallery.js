@@ -45,9 +45,7 @@ const Gallery = ({ navigation }) => {
 
   // if result is cached use result, otherwise fetch from api
   const getResult = (item) => {
-    if (!result) {
-      dispatch({ type: modelTypes.GET_RESULT_REQUESTED, photo: item.photo, id: item.id });
-    }
+    dispatch({ type: modelTypes.GET_RESULT_REQUESTED, photo: item.photo, id: item.id });
   };
 
   useEffect(() => {
