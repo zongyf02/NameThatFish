@@ -27,6 +27,8 @@ export default function reducer(state = initialState, action = {}) {
         ...state,
         modelErrMsg: action.message,
       };
+    case modelTypes.CLEAR_RESULTS:
+      return initialState;
     default:
       return state;
   }

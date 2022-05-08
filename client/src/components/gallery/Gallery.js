@@ -41,6 +41,7 @@ const Gallery = ({ navigation }) => {
   };
   const clearPhotos = () => {
     dispatch({ type: imagesTypes.CLEAR_PHOTOS });
+    dispatch({ type: modelTypes.CLEAR_RESULTS });
   };
 
   // if result is cached use result, otherwise fetch from api
