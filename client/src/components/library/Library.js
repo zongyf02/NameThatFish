@@ -26,7 +26,11 @@ const FishInformation = ({ fish, navigation }) => {
   });
 
   useEffect(() => {
-    importFish(fish.name).then((data) => setImages(data));
+    try {
+      importFish(fish.name).then((data) => setImages(data));
+    } catch (err) {
+      console.error(err);
+    }
   }, []);
 
   return (
