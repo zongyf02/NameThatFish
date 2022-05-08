@@ -21,7 +21,6 @@ export default StyleSheet.create({
     height: 300,
     alignSelf: 'center',
     marginLeft: 36,
-    transform: [{ scaleX: -1 }],
   },
   imageContainer: {
     flex: 1,

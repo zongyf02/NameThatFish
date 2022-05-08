@@ -12,27 +12,21 @@ import {
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import fishData from './fish.json';
+import importFish from './importFish';
 import styles from './style';
 
 const FishInformation = ({ fish, navigation }) => {
   const [images, setImages] = useState({
     large: null,
-    small: { small1: null, small2: null, small3: null },
+    small: {
+      small1: null,
+      small2: null,
+      small3: null,
+    },
   });
 
   useEffect(() => {
-    const importImages = async () => {
-      const large = await import(`../../../assets/images/Bluegill/large.png`);
-      const small1 = await import(`../../../assets/images/Bluegill/small1.jpg`);
-      const small2 = await import(`../../../assets/images/Bluegill/small2.jpg`);
-      const small3 = await import(`../../../assets/images/Bluegill/small3.jpg`);
-      setImages({
-        large: large.default,
-        small: { small1: small1.default, small2: small2.default, small3: small3.default },
-      });
-    };
-
-    importImages();
+    importFish(fish.name).then((data) => setImages(data));
   }, []);
 
   return (
@@ -54,7 +48,7 @@ const FishInformation = ({ fish, navigation }) => {
                 fadeDuration={1000}
                 style={styles.otherImage}
                 resizeMode="stretch"
-                source={image}
+                source={image?.default}
               />
             ))}
           </View>
@@ -62,7 +56,7 @@ const FishInformation = ({ fish, navigation }) => {
             fadeDuration={1000}
             style={styles.image}
             resizeMode="contain"
-            source={images.large}
+            source={images?.large?.default}
           />
         </View>
 
