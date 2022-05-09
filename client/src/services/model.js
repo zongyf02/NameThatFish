@@ -11,7 +11,7 @@ class ModelService {
     });
 
     // will have to modify to fit env, currently assuming localhost
-    return fetch('http://10.0.0.50:8080/predict', {
+    return fetch('http://10.32.93.250:8080/predict', {
       method: 'POST',
       Accept: 'application/json',
       'Content-Type': 'multipart/form-data',

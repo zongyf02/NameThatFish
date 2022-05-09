@@ -1,5 +1,5 @@
 import { Entypo } from '@expo/vector-icons';
-import { memo, useState, useEffect } from 'react';
+import { memo, useState, useEffect, useRef } from 'react';
 import {
   Image,
   Linking,
@@ -10,12 +10,26 @@ import {
   View,
 } from 'react-native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
+import { useNavigation } from '@react-navigation/native';
 
 import fishData from './fish.json';
 import importFish from './importFish';
 import styles from './style';
 
+const useSafeLoad = () => {
+  const safeLoad = useRef(false);
+
+  useEffect(() => {
+    safeLoad.current = true;
+
+    return () => (safeLoad.current = false);
+  }, []);
+
+  return safeLoad;
+};
+
 const FishInformation = ({ fish, navigation }) => {
+  const safeLoad = useSafeLoad();
   const [images, setImages] = useState({
     large: null,
     small: {
@@ -26,11 +40,13 @@ const FishInformation = ({ fish, navigation }) => {
   });
 
   useEffect(() => {
-    try {
-      importFish(fish.name).then((data) => setImages(data));
-    } catch (err) {
-      console.error(err);
-    }
+    importFish(fish.name)
+      .then((data) => {
+        if (safeLoad.current) {
+          setImages(data);
+        }
+      })
+      .catch((err) => console.log(err));
   }, []);
 
   return (
@@ -93,10 +109,17 @@ const FishInformation = ({ fish, navigation }) => {
 
 const Drawer = createDrawerNavigator();
 
-const Library = ({ route, navigation }) => {
+const Library = ({ route }) => {
+  const navigation = useNavigation();
+
+  useEffect(() => {
+    const name = route?.params?.name;
+    if (name) navigation.navigate(name);
+  }, [route?.params?.name]);
+
   return (
     <Drawer.Navigator
-      initialRouteName={route?.params?.name || fishData[0].name}
+      initialRouteName={fishData[0].name}
       screenOptions={{
         drawerPosition: 'right',
         headerShown: false,
