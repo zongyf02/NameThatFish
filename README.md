@@ -1,7 +1,10 @@
 # NameThat🐟
 
-(WORK IN PROGRESS)
-A fish identifier for anglers and fish hobbyists
+A fish identifier for anglers and fish hobbyists. Created by Alex Li, Daniel Lee, and Yifan Zong.
+
+This is forked from Alex Li's repo. My (Yifan Zong) contributions are in `backend/model` [link](https://github.com/zongyf02/NameThatFish/tree/main/backend/model).
+
+To see the app working, please download and check out the video demo. Alternatively, visit my [Hugging Face space](https://huggingface.co/spaces/zongyf02/NameThatFish).
 
 ## Installation
 
@@ -24,10 +27,6 @@ To start the application, navigate to the client directory and run
 ```
 yarn start
 ```
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
 
